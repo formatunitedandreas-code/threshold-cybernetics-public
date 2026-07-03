@@ -1,0 +1,22 @@
+{
+  "ledger_id": "candidate-ledger-sample-v0-2-0",
+  "source_case": "spring-framework-petclinic-style public demo",
+  "synthetic_public_safe": true,
+  "candidates": [
+    {
+      "candidate_id": "DEP-001",
+      "candidate_type": "dependency_plugin_review_candidate",
+      "candidate_summary": "Synthetic dependency/plugin review candidate."
+    },
+    {
+      "candidate_id": "CFG-001",
+      "candidate_type": "spring_configuration_inventory_candidate",
+      "candidate_summary": "Synthetic Spring configuration inventory candidate."
+    },
+    {
+      "candidate_id": "JSP-001",
+      "candidate_type": "jsp_mvc_risk_candidate",
+      "candidate_summary": "Synthetic JSP/MVC semantic-risk candidate."
+    }
+  ]
+}

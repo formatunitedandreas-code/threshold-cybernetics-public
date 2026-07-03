@@ -1,0 +1,18 @@
+{
+  "candidate_id": "DEP-001",
+  "candidate_type": "dependency_plugin_review_candidate",
+  "source_case": "spring-framework-petclinic-style public demo",
+  "authorization_present": false,
+  "decision": "stop_no_action",
+  "reason": "no_valid_explicit_human_authorization",
+  "patch_authorized": false,
+  "patch_branch_created": false,
+  "source_mutated": false,
+  "commit_created": false,
+  "pr_created": false,
+  "merge_performed": false,
+  "security_fix_claimed": false,
+  "deployment_readiness_claimed": false,
+  "product_readiness_claimed": false,
+  "human_review_required": true
+}

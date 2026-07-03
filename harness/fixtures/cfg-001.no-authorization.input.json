@@ -1,0 +1,5 @@
+{
+  "candidate_id": "CFG-001",
+  "candidate_type": "spring_configuration_inventory_candidate",
+  "source_case": "spring-framework-petclinic-style public demo"
+}

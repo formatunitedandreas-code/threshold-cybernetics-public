@@ -1,0 +1,13 @@
+{
+  "candidate_id": "DEP-001",
+  "candidate_type": "dependency_plugin_review_candidate",
+  "decision": "stop_no_action",
+  "authorization_present": false,
+  "patch_authorized": false,
+  "source_mutated": false,
+  "commit_created": false,
+  "pr_created": false,
+  "security_fix_claimed": false,
+  "deployment_readiness_claimed": false,
+  "human_review_required": true
+}

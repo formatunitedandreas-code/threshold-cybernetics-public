@@ -28,3 +28,19 @@ This is a proof-of-architecture release.
 It does not claim autonomous refactoring, production readiness, deployment readiness, security remediation, compliance certification, or runtime authority.
 
 This public mirror contains only bounded public-safe summary material. It does not contain private source code, PetClinic source code, raw logs, scanner reports, private benchmark outputs, or runtime artifacts.
+
+## Public Evidence Harness
+
+v0.2.0 adds a minimal reproducible public harness.
+
+You can run:
+
+```bash
+cd harness
+npm install
+npm test
+```
+
+The harness demonstrates that selected candidate fixtures without explicit authorization deterministically produce Stop/No-Action decision envelopes.
+
+This does not publish the private core and does not claim product readiness, deployment readiness, security remediation, autonomous refactoring, compliance certification, or runtime authority.

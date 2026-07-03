@@ -1,0 +1,16 @@
+{
+  "name": "@threshold-cybernetics/public-evidence-harness",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run && npm run verify",
+    "verify": "tsx scripts/verify-no-action-invariants.ts",
+    "produce-decision-envelopes": "tsx scripts/produce-decision-envelopes.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

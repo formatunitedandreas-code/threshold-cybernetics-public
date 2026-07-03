@@ -1,0 +1,9 @@
+{
+  "candidate_id": "DEP-001",
+  "decision": "eligible_for_separate_patch_branch",
+  "patch_authorized": false,
+  "source_mutated": false,
+  "pr_created": false,
+  "deployment_readiness_claimed": false,
+  "security_fix_claimed": false
+}

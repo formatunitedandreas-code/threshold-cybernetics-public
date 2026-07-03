@@ -1,0 +1,13 @@
+{
+  "candidate_id": "CFG-001",
+  "candidate_type": "spring_configuration_inventory_candidate",
+  "decision": "stop_no_action",
+  "authorization_present": false,
+  "patch_authorized": false,
+  "source_mutated": false,
+  "commit_created": false,
+  "pr_created": false,
+  "security_fix_claimed": false,
+  "deployment_readiness_claimed": false,
+  "human_review_required": true
+}

@@ -1,0 +1,30 @@
+Compared produced decision envelopes against expected invariant fields.
+
+DEP-001:
+  decision: stop_no_action
+  patch_authorized: false
+  source_mutated: false
+  pr_created: false
+  deployment_readiness_claimed: false
+  security_fix_claimed: false
+  result: match
+
+CFG-001:
+  decision: stop_no_action
+  patch_authorized: false
+  source_mutated: false
+  pr_created: false
+  deployment_readiness_claimed: false
+  security_fix_claimed: false
+  result: match
+
+JSP-001:
+  decision: stop_no_action
+  patch_authorized: false
+  source_mutated: false
+  pr_created: false
+  deployment_readiness_claimed: false
+  security_fix_claimed: false
+  result: match
+
+overall_result: pass

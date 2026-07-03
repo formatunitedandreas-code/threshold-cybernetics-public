@@ -1,0 +1,24 @@
+{
+  "manifest_id": "threshold_cybernetics_public_evidence_manifest_v0_2_0",
+  "release_target": "v0.2.0-public-evidence-harness",
+  "status": "public_safe_synthetic_evidence",
+  "contains_private_core": false,
+  "contains_private_source_code": false,
+  "contains_petclinic_source_code": false,
+  "contains_raw_logs": false,
+  "contains_scanner_reports": false,
+  "artifacts": {
+    "candidate_ledger": "evidence/candidate-ledger.sample.json",
+    "stop_no_action_receipts": 3,
+    "authorization_gates": 3,
+    "decision_envelopes": 3
+  },
+  "non_claims": {
+    "product_readiness_claimed": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false,
+    "autonomous_refactoring_claimed": false,
+    "compliance_certification_claimed": false,
+    "runtime_authority_claimed": false
+  }
+}

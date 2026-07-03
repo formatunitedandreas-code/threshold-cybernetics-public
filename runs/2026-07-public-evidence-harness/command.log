@@ -1,0 +1,6 @@
+public-evidence-harness-001
+working_directory: harness
+commands:
+  - npm install
+  - npm test
+  - npm run produce-decision-envelopes

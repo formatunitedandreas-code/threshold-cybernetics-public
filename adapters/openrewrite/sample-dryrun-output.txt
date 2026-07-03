@@ -1,0 +1,5 @@
+OpenRewrite dry run completed.
+Recipe list: synthetic.public.NoOpRecipe
+Changes generated: 0
+Patch files written: 0
+Interpretation: dry run output is evidence only and is not patch approval.

@@ -1,0 +1,8 @@
+{
+  "candidate_id": "CFG-001",
+  "authorization_required": true,
+  "authorization_present": false,
+  "allowed_scope": "spring_configuration_inventory_candidate",
+  "decision_if_missing": "stop_no_action",
+  "automatic_execution_allowed": false
+}

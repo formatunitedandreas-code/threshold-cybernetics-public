@@ -1,0 +1,8 @@
+{
+  "candidate_id": "JSP-001",
+  "authorization_required": true,
+  "authorization_present": false,
+  "allowed_scope": "jsp_mvc_risk_candidate",
+  "decision_if_missing": "stop_no_action",
+  "automatic_execution_allowed": false
+}

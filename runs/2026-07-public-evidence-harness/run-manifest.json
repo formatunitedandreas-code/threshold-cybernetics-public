@@ -1,0 +1,13 @@
+{
+  "run_id": "public-evidence-harness-001",
+  "repo": "threshold-cybernetics-public",
+  "release_target": "v0.2.0-public-evidence-harness",
+  "command": "npm test",
+  "result": "pass",
+  "candidates": 3,
+  "stop_no_action": 3,
+  "patches_created": 0,
+  "prs_created": 0,
+  "security_fix_claimed": false,
+  "deployment_readiness_claimed": false
+}

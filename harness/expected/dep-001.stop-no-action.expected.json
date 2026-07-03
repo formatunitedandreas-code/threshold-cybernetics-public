@@ -1,0 +1,9 @@
+{
+  "candidate_id": "DEP-001",
+  "decision": "stop_no_action",
+  "patch_authorized": false,
+  "source_mutated": false,
+  "pr_created": false,
+  "deployment_readiness_claimed": false,
+  "security_fix_claimed": false
+}
