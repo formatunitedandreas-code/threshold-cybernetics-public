@@ -1,0 +1,58 @@
+[
+  {
+    "candidate_id": "DEP-001",
+    "candidate_type": "dependency_plugin_review_candidate",
+    "source_case": "minispring-legacy",
+    "detected_from": [
+      "pom.xml"
+    ],
+    "risk_hints": [
+      "dependency_version_surface",
+      "plugin_version_surface",
+      "transitive_dependency_possible"
+    ],
+    "patch_authorized": false,
+    "source_mutated": false,
+    "pr_created": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false
+  },
+  {
+    "candidate_id": "CFG-001",
+    "candidate_type": "spring_config_inventory_candidate",
+    "source_case": "minispring-legacy",
+    "detected_from": [
+      "src/main/resources/spring/mvc-core-config.xml"
+    ],
+    "risk_hints": [
+      "configuration_behavior_surface",
+      "view_resolution_surface",
+      "migration_requires_human_review"
+    ],
+    "patch_authorized": false,
+    "source_mutated": false,
+    "pr_created": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false
+  },
+  {
+    "candidate_id": "JSP-001",
+    "candidate_type": "jsp_mvc_risk_candidate",
+    "source_case": "minispring-legacy",
+    "detected_from": [
+      "src/main/webapp/WEB-INF/jsp/owners.jsp",
+      "src/main/java/org/example/web/OwnerController.java"
+    ],
+    "risk_hints": [
+      "form_binding_surface",
+      "routing_surface",
+      "view_rendering_surface",
+      "ui_behavior_requires_human_review"
+    ],
+    "patch_authorized": false,
+    "source_mutated": false,
+    "pr_created": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false
+  }
+]

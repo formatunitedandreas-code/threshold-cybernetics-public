@@ -1,0 +1,95 @@
+[
+  {
+    "candidate_id": "DEP-001",
+    "candidate_type": "dependency_plugin_review_candidate",
+    "source_case": "minispring-legacy",
+    "detected_from": [
+      "pom.xml"
+    ],
+    "evidence_sources": [
+      {
+        "path": "pom.xml",
+        "sha256": "d858922491fa448612e8e79dd2494357e7cdcaf2769717e23b78060f49c34498"
+      }
+    ],
+    "risk_hints": [
+      "dependency_version_surface",
+      "plugin_version_surface",
+      "transitive_dependency_possible"
+    ],
+    "decision_boundary": [
+      "Candidate Detection != Patch Approval",
+      "Candidate Detection != Security Fix",
+      "Candidate Detection != Deployment Readiness"
+    ],
+    "patch_authorized": false,
+    "source_mutated": false,
+    "pr_created": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false
+  },
+  {
+    "candidate_id": "CFG-001",
+    "candidate_type": "spring_config_inventory_candidate",
+    "source_case": "minispring-legacy",
+    "detected_from": [
+      "src/main/resources/spring/mvc-core-config.xml"
+    ],
+    "evidence_sources": [
+      {
+        "path": "src/main/resources/spring/mvc-core-config.xml",
+        "sha256": "dab5f48167b30e73900fe0ae3b88a65b0bf25c7d144d1c435a8ccfa107e1c9b9"
+      }
+    ],
+    "risk_hints": [
+      "configuration_behavior_surface",
+      "view_resolution_surface",
+      "migration_requires_human_review"
+    ],
+    "decision_boundary": [
+      "Candidate Detection != Patch Approval",
+      "Candidate Detection != Security Fix",
+      "Candidate Detection != Deployment Readiness"
+    ],
+    "patch_authorized": false,
+    "source_mutated": false,
+    "pr_created": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false
+  },
+  {
+    "candidate_id": "JSP-001",
+    "candidate_type": "jsp_mvc_risk_candidate",
+    "source_case": "minispring-legacy",
+    "detected_from": [
+      "src/main/webapp/WEB-INF/jsp/owners.jsp",
+      "src/main/java/org/example/web/OwnerController.java"
+    ],
+    "evidence_sources": [
+      {
+        "path": "src/main/webapp/WEB-INF/jsp/owners.jsp",
+        "sha256": "dc3258ef04ac38ff5c05cc330c97af919a32e9f389c58ffea5922f3564e03e54"
+      },
+      {
+        "path": "src/main/java/org/example/web/OwnerController.java",
+        "sha256": "244b123fee2bae65128ea2ace097b74d7dc4797b605a4472339cc8ac97931b4a"
+      }
+    ],
+    "risk_hints": [
+      "form_binding_surface",
+      "routing_surface",
+      "view_rendering_surface",
+      "ui_behavior_requires_human_review"
+    ],
+    "decision_boundary": [
+      "Candidate Detection != Patch Approval",
+      "Candidate Detection != Security Fix",
+      "Candidate Detection != Deployment Readiness"
+    ],
+    "patch_authorized": false,
+    "source_mutated": false,
+    "pr_created": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false
+  }
+]

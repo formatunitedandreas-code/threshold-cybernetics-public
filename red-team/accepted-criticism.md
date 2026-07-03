@@ -6,3 +6,4 @@
 - Private core remains private.
 - Risk engine maturity is not proven.
 - Toolchain integration is only partially demonstrated.
+- Candidate identifiers were previously visible mostly as labels, not as outputs derived from public fixture surfaces.

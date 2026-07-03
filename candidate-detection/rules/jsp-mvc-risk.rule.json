@@ -1,0 +1,24 @@
+{
+  "rule_id": "jsp_mvc_risk_candidate_rule_v0_1",
+  "candidate_id": "JSP-001",
+  "candidate_type": "jsp_mvc_risk_candidate",
+  "triggers": [
+    "JSP files present",
+    "Controller-like Java files present"
+  ],
+  "evidence_sources": [
+    "src/main/webapp/**/*.jsp",
+    "src/main/java/**/*Controller.java"
+  ],
+  "risk_hints": [
+    "form_binding_surface",
+    "routing_surface",
+    "view_rendering_surface",
+    "ui_behavior_requires_human_review"
+  ],
+  "non_claims": [
+    "JSP/MVC candidate is not UI refactor approval",
+    "JSP/MVC candidate is not patch approval",
+    "JSP/MVC candidate is not deployment readiness"
+  ]
+}

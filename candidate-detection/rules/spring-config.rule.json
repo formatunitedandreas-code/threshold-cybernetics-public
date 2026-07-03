@@ -1,0 +1,21 @@
+{
+  "rule_id": "spring_config_inventory_rule_v0_1",
+  "candidate_id": "CFG-001",
+  "candidate_type": "spring_config_inventory_candidate",
+  "triggers": [
+    "Spring XML configuration file present",
+    "view resolver or resource mapping surface present"
+  ],
+  "evidence_sources": [
+    "src/main/resources/**/*.xml"
+  ],
+  "risk_hints": [
+    "configuration_behavior_surface",
+    "view_resolution_surface",
+    "migration_requires_human_review"
+  ],
+  "non_claims": [
+    "Config inventory is not config migration approval",
+    "Config candidate is not patch approval"
+  ]
+}

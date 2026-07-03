@@ -1,0 +1,15 @@
+{
+  "run_id": "candidate-detection-harness-001",
+  "repo": "threshold-cybernetics-public",
+  "release_target": "v0.3.0-public-candidate-detection-evidence-harness",
+  "command": "npm test && npm run produce-candidate-ledger",
+  "result": "pass",
+  "fixtures": 2,
+  "candidates_detected": 3,
+  "candidate_ids": ["DEP-001", "CFG-001", "JSP-001"],
+  "patches_created": 0,
+  "source_mutated": false,
+  "prs_created": 0,
+  "security_fix_claimed": false,
+  "deployment_readiness_claimed": false
+}

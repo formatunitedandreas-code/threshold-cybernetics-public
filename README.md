@@ -44,3 +44,24 @@ npm test
 The harness demonstrates that selected candidate fixtures without explicit authorization deterministically produce Stop/No-Action decision envelopes.
 
 This does not publish the private core and does not claim product readiness, deployment readiness, security remediation, autonomous refactoring, compliance certification, or runtime authority.
+
+## Public Candidate Detection Harness
+
+v0.3.0 adds a minimal public candidate-detection harness.
+
+It demonstrates how three candidate classes can be derived from synthetic, open fixture surfaces:
+
+- `DEP-001` from dependency/plugin surfaces in `pom.xml`
+- `CFG-001` from Spring XML configuration surfaces
+- `JSP-001` from JSP + Controller surfaces
+
+Run it locally:
+
+```bash
+cd candidate-detection
+npm install
+npm test
+npm run produce-candidate-ledger
+```
+
+This does not publish the private core and does not claim enterprise-grade risk scoring, semantic breaking-change detection, product readiness, deployment readiness, security remediation, autonomous refactoring, compliance certification, or runtime authority.

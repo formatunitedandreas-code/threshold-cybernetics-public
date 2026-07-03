@@ -1,0 +1,20 @@
+name: Candidate Detection Evidence Harness
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  candidate-detection:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: candidate-detection
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - run: npm test
+      - run: npm run produce-candidate-ledger

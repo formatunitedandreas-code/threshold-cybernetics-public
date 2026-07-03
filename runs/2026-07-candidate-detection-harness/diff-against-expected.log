@@ -1,0 +1,13 @@
+minispring-legacy:
+  expected candidate ids: DEP-001, CFG-001, JSP-001
+  observed candidate ids: DEP-001, CFG-001, JSP-001
+  evidence hashes present: true
+  no execution claims: true
+  result: match
+
+clean-no-candidates:
+  expected candidate ids: []
+  observed candidate ids: []
+  result: match
+
+overall_result: pass

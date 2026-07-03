@@ -1,0 +1,22 @@
+{
+  "rule_id": "dependency_plugin_candidate_rule_v0_1",
+  "candidate_id": "DEP-001",
+  "candidate_type": "dependency_plugin_review_candidate",
+  "triggers": [
+    "pom.xml contains dependencies",
+    "pom.xml contains build plugins"
+  ],
+  "evidence_sources": [
+    "pom.xml"
+  ],
+  "risk_hints": [
+    "dependency_version_surface",
+    "plugin_version_surface",
+    "transitive_dependency_possible"
+  ],
+  "non_claims": [
+    "Dependency candidate is not security fix",
+    "Dependency candidate is not patch approval",
+    "Dependency candidate is not deployment readiness"
+  ]
+}

@@ -1,0 +1,6 @@
+candidate-detection-harness-001
+working_directory: candidate-detection
+commands:
+  - npm install
+  - npm test
+  - npm run produce-candidate-ledger
