@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Release Action Plan",
+  "type": "object",
+  "required": ["plan_id", "release_tag", "planned_actions", "planned_file_paths", "planned_claims"],
+  "additionalProperties": false,
+  "properties": {
+    "plan_id": { "type": "string" },
+    "release_tag": { "type": "string" },
+    "planned_actions": { "type": "array", "items": { "type": "string" } },
+    "planned_file_paths": { "type": "array", "items": { "type": "string" } },
+    "planned_claims": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product_readiness_claimed",
+        "deployment_readiness_claimed",
+        "security_fix_claimed",
+        "autonomous_refactoring_claimed",
+        "compliance_certification_claimed",
+        "runtime_authority_claimed"
+      ],
+      "properties": {
+        "product_readiness_claimed": { "type": "boolean" },
+        "deployment_readiness_claimed": { "type": "boolean" },
+        "security_fix_claimed": { "type": "boolean" },
+        "autonomous_refactoring_claimed": { "type": "boolean" },
+        "compliance_certification_claimed": { "type": "boolean" },
+        "runtime_authority_claimed": { "type": "boolean" }
+      }
+    }
+  }
+}

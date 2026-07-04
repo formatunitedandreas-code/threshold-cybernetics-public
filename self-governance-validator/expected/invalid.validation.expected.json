@@ -1,0 +1,12 @@
+{
+  "valid": false,
+  "non_authorizing": true,
+  "authorizes_git_commit": false,
+  "authorizes_git_tag": false,
+  "authorizes_gh_release": false,
+  "validator_mandatory_for_git": false,
+  "validator_mandatory_for_gh": false,
+  "hooks_installed": false,
+  "wrappers_installed": false,
+  "codex_runtime_tool_enforcement_claimed": false
+}

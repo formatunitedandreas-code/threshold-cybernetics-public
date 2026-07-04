@@ -15,4 +15,8 @@ Please review:
 
 Known boundary:
 
-The project now has a release-action receipt validator, but it is not yet mandatory for git/gh execution. There are no mandatory git/gh wrappers and no observed Codex runtime tool interception by Threshold policy.
+Before v0.9.1, the release-action receipt validator was reported from the private repo but was not publicly reproducible.
+
+v0.9.1 adds a public reproducible Release Action Receipt Validator harness. It validates release tag, allowed actions, file allowlist, forbidden actions and forbidden claims.
+
+The validator is still not mandatory for git/gh execution. There are no mandatory git/gh wrappers and no observed Codex runtime tool interception by Threshold policy.

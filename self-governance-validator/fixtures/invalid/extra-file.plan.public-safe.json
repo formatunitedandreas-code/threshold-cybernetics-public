@@ -1,0 +1,14 @@
+{
+  "plan_id": "extra-file-plan",
+  "release_tag": "v0.9.1-public-release-action-receipt-validator-harness",
+  "planned_actions": ["commit"],
+  "planned_file_paths": ["private-core/source.ts"],
+  "planned_claims": {
+    "product_readiness_claimed": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false,
+    "autonomous_refactoring_claimed": false,
+    "compliance_certification_claimed": false,
+    "runtime_authority_claimed": false
+  }
+}

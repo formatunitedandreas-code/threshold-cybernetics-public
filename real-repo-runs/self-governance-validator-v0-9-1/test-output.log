@@ -1,0 +1,17 @@
+> @threshold-cybernetics/public-release-action-receipt-validator-harness@0.9.1 test
+> vitest run
+
+Test Files: 7 passed (7)
+Tests: 64 passed (64)
+
+Covered:
+- valid plan + valid receipt
+- missing receipt
+- wrong release tag
+- broad scope
+- planned action not allowed
+- forbidden action present
+- file outside allowlist
+- empty allowlist with planned files
+- forbidden product/deployment/security/compliance/runtime claims
+- non-authorizing output invariants

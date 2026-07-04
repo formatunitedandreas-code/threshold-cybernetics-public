@@ -41,6 +41,25 @@ Please see:
 
 This is an invitation for critique, not a certification claim.
 
+## v0.9.1 - Public Release Action Receipt Validator Harness
+
+v0.9.1 repairs a public evidence gap from v0.9.0.
+
+The external critique pack stated that a Release Action Receipt Validator existed, but the validator was not publicly reproducible in this repository.
+
+v0.9.1 adds a minimal public validator harness with schemas, fixtures, tests, adversarial cases and run artifacts.
+
+It validates:
+
+- release tag
+- allowed actions
+- file allowlist
+- forbidden actions
+- forbidden claims
+
+It does not install git/gh wrappers, hooks or runtime tool interception.
+It does not make the validator mandatory for Codex actions.
+
 ## Public Evidence Harness
 
 v0.2.0 adds a minimal reproducible public harness.

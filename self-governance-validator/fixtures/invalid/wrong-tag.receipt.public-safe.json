@@ -1,0 +1,16 @@
+{
+  "receipt_id": "wrong-tag-receipt",
+  "receipt_type": "release_action_authorization_receipt",
+  "release_tag": "v0.0.0-wrong",
+  "allowed_scope": "public_validator_harness_release_only",
+  "allowed_actions": ["commit"],
+  "allowed_file_paths": ["README.md"],
+  "forbidden_actions": [],
+  "forbidden_claims": [],
+  "product_readiness_claim_allowed": false,
+  "deployment_readiness_claim_allowed": false,
+  "security_fix_claim_allowed": false,
+  "autonomous_refactoring_claim_allowed": false,
+  "compliance_certification_claim_allowed": false,
+  "runtime_authority_claim_allowed": false
+}

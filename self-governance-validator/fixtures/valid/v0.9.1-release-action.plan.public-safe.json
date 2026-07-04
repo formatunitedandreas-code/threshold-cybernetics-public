@@ -1,0 +1,19 @@
+{
+  "plan_id": "public-v0-9-1-release-action-plan",
+  "release_tag": "v0.9.1-public-release-action-receipt-validator-harness",
+  "planned_actions": ["commit", "push", "tag", "release"],
+  "planned_file_paths": [
+    "README.md",
+    "self-governance-validator/README.md",
+    "external-critique/SELF_GOVERNANCE_STATUS.md",
+    "red-team/response-001.md"
+  ],
+  "planned_claims": {
+    "product_readiness_claimed": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false,
+    "autonomous_refactoring_claimed": false,
+    "compliance_certification_claimed": false,
+    "runtime_authority_claimed": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "receipt_id": "public-v0-9-1-release-action-receipt",
+  "receipt_type": "release_action_authorization_receipt",
+  "release_tag": "v0.9.1-public-release-action-receipt-validator-harness",
+  "allowed_scope": "public_validator_harness_release_only",
+  "allowed_actions": ["commit", "push", "tag", "release"],
+  "allowed_file_paths": ["README.md", "self-governance-validator/**", "external-critique/**", "red-team/**"],
+  "forbidden_actions": ["merge", "deploy", "install_hook", "install_wrapper"],
+  "forbidden_claims": [
+    "product_readiness",
+    "deployment_readiness",
+    "security_fix",
+    "autonomous_refactoring",
+    "compliance_certification",
+    "runtime_authority"
+  ],
+  "product_readiness_claim_allowed": false,
+  "deployment_readiness_claim_allowed": false,
+  "security_fix_claim_allowed": false,
+  "autonomous_refactoring_claim_allowed": false,
+  "compliance_certification_claim_allowed": false,
+  "runtime_authority_claim_allowed": false
+}

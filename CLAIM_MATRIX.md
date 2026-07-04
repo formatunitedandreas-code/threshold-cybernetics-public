@@ -43,6 +43,9 @@ runtime_authority_claimed: false
 - v0.8.0 remains readout-only and non-authorizing.
 - The project invites external critique of its public boundary-soundness and self-governance chain.
 - The Release Action Receipt Validator exists but is not mandatory enforcement.
+- v0.9.1 adds a public reproducible Release Action Receipt Validator harness.
+- The validator checks release tag, allowed actions, file allowlist, forbidden actions and forbidden claims.
+- The validator remains non-mandatory for git/gh execution.
 - Open-source Spring Framework PetClinic-style demo scope.
 - Governed refactoring readiness as review/process readiness.
 - Controlled non-execution and Stop/No-Action as intended governance behavior.
@@ -99,6 +102,8 @@ runtime_authority_claimed: false
 - Peer review passed.
 - Codex is fully guarded.
 - Threshold runtime-enforces all Codex actions.
+- git/gh actions are mechanically blocked by Threshold.
+- The public validator authorizes commits, tags or releases.
 
 ## Non-Claims
 
@@ -129,6 +134,9 @@ runtime_authority_claimed: false
 - Release Action Receipt Validator != Mandatory Git Wrapper
 - Release Action Receipt Validator != Mandatory GH Wrapper
 - Validator Available != Runtime Enforcement
+- Public Validator Harness != Private Core Publication
+- Validator Pass != Commit Authorization
+- Validator Pass != Release Execution Permission
 - Receipt Validation != Patch Execution
 - Receipt Valid != Action Allowed
 - Receipt Scope Match != Runtime Authority

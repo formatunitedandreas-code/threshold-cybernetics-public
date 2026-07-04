@@ -1,0 +1,15 @@
+{
+  "run_id": "public-release-action-receipt-validator-v0-9-1",
+  "release_target": "v0.9.1-public-release-action-receipt-validator-harness",
+  "public_validator_harness_created": true,
+  "private_validator_claim_publicly_repaired": true,
+  "validator_mandatory_for_git": false,
+  "validator_mandatory_for_gh": false,
+  "hooks_installed": false,
+  "wrappers_installed": false,
+  "codex_runtime_tool_enforcement_claimed": false,
+  "product_readiness_claimed": false,
+  "deployment_readiness_claimed": false,
+  "security_fix_claimed": false,
+  "runtime_authority_claimed": false
+}

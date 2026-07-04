@@ -1,0 +1,23 @@
+name: Public Release Action Receipt Validator Harness
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  self-governance-validator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install validator harness
+        working-directory: self-governance-validator
+        run: npm ci
+
+      - name: Test validator harness
+        working-directory: self-governance-validator
+        run: npm test
+
+      - name: Produce validator readout
+        working-directory: self-governance-validator
+        run: npm run produce-validator-readout -- --plan ./fixtures/valid/v0.9.1-release-action.plan.public-safe.json --receipt ./fixtures/valid/v0.9.1-release-action.receipt.public-safe.json --out ../real-repo-runs/self-governance-validator-v0-9-1/validator-readout.ci.public-safe.json

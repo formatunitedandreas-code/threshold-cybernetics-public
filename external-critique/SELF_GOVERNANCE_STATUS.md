@@ -2,8 +2,9 @@
 
 Current status:
 
-- Release Action Receipt Validator v0.1 exists.
-- It validates receipt vs plan, allowed actions, file allowlist and forbidden claims.
+- v0.9.1 adds a public reproducible Release Action Receipt Validator harness.
+- Before v0.9.1, the validator was reported from the private repo but was not publicly reproducible.
+- The public v0.9.1 harness validates release tag, allowed actions, file allowlist, forbidden actions and forbidden claims.
 - It is not yet a mandatory git wrapper.
 - It is not yet a mandatory gh wrapper.
 - It is not yet a pre-commit/pre-push hook.

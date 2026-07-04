@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Release Action Receipt",
+  "type": "object",
+  "required": [
+    "receipt_id",
+    "receipt_type",
+    "release_tag",
+    "allowed_scope",
+    "allowed_actions",
+    "allowed_file_paths",
+    "forbidden_actions",
+    "forbidden_claims",
+    "product_readiness_claim_allowed",
+    "deployment_readiness_claim_allowed",
+    "security_fix_claim_allowed",
+    "autonomous_refactoring_claim_allowed",
+    "compliance_certification_claim_allowed",
+    "runtime_authority_claim_allowed"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "receipt_id": { "type": "string" },
+    "receipt_type": { "const": "release_action_authorization_receipt" },
+    "release_tag": { "type": "string" },
+    "allowed_scope": { "type": "string" },
+    "allowed_actions": { "type": "array", "items": { "type": "string" } },
+    "allowed_file_paths": { "type": "array", "items": { "type": "string" } },
+    "forbidden_actions": { "type": "array", "items": { "type": "string" } },
+    "forbidden_claims": { "type": "array", "items": { "type": "string" } },
+    "product_readiness_claim_allowed": { "type": "boolean" },
+    "deployment_readiness_claim_allowed": { "type": "boolean" },
+    "security_fix_claim_allowed": { "type": "boolean" },
+    "autonomous_refactoring_claim_allowed": { "type": "boolean" },
+    "compliance_certification_claim_allowed": { "type": "boolean" },
+    "runtime_authority_claim_allowed": { "type": "boolean" }
+  }
+}

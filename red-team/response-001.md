@@ -6,6 +6,8 @@ The external critique pack explicitly requests adversarial tests and documents t
 
 It states that Release Action Receipt Validator v0.1 exists, but is not yet a mandatory git wrapper, gh wrapper, pre-commit hook, pre-push hook, release hook, or Codex runtime tool interception layer.
 
+v0.9.1 repairs the public reproducibility gap by adding a minimal public Release Action Receipt Validator harness with schemas, fixtures, tests, adversarial cases and run artifacts. The harness remains non-mandatory and non-authorizing.
+
 v0.2.0 does not publish the private core.
 
 v0.2.0 adds a minimal public harness.

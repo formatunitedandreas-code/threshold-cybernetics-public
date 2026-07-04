@@ -4,6 +4,7 @@
 
 - External reviewers should test whether recent fixes address general error classes or only known fixtures.
 - The release-action receipt validator is available but not mandatory.
+- Before v0.9.1, the public repo did not contain executable validator code or tests.
 - Codex runtime tool enforcement by Threshold remains unobserved.
 
 - Public material did not yet include reproducible code.
