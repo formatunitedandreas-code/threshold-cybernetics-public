@@ -101,3 +101,9 @@ git show <target_commit>:<path> | sha256sum
 v0.4.0 remains useful for candidate path detection but is superseded for hash provenance by v0.4.1.
 
 This release does not publish PetClinic source code, private core code, private logs, scanner reports, or raw traces.
+
+A root-cause analysis for the v0.4.0 hash mismatch is available under:
+
+`real-repo-runs/spring-framework-petclinic-v0-4-1/HASH_ROOT_CAUSE_ANALYSIS_V0_1.md`
+
+The RCA records the v0.4.0 line-ending-sensitive hash provenance failure and the v0.4.1 Git-object-byte repair.

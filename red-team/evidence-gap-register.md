@@ -24,4 +24,10 @@ v0.4.0 published SHA-256 hashes were not externally reproducible against Git obj
 
 v0.4.1 repairs this by using Git-object-byte hashing and CI verification.
 
+Accepted: v0.4.0 hash provenance was not externally reproducible against Git object bytes for 19/20 evidence items.
+
+Response: v0.4.1 repaired the hash policy and this RCA investigates the cause.
+
+Remaining: future evidence runs must keep Git-object-byte hash verification in CI before any risk-gradation claims.
+
 These gaps are not failures of the harness. They are explicit boundaries for future evidence work.

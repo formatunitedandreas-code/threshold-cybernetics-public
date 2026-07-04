@@ -6,6 +6,7 @@
   "scripts": {
     "test": "vitest run",
     "detect": "tsx scripts/detect-repo.ts",
+    "analyze-v0-4-hash-root-cause": "tsx scripts/analyze-v0-4-hash-root-cause.ts",
     "produce-real-repo-evidence-index": "tsx scripts/produce-real-repo-evidence-index.ts",
     "verify-real-repo-hashes": "tsx scripts/verify-real-repo-hashes.ts",
     "produce-candidate-ledger": "tsx scripts/produce-candidate-ledger.ts"

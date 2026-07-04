@@ -1,0 +1,363 @@
+{
+  "analysis_id": "v0_4_0_hash_provenance_root_cause_v0_1",
+  "target_repo": "spring-petclinic/spring-framework-petclinic",
+  "target_commit": "bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a",
+  "root_cause_classification": "confirmed_line_ending_normalization",
+  "summary": {
+    "evidence_items_analyzed": 20,
+    "v0_4_0_git_byte_matches": 1,
+    "v0_4_0_git_byte_mismatches": 19,
+    "crlf_normalized_matches": 20,
+    "working_tree_matches": 20,
+    "v0_4_1_git_byte_matches": 20,
+    "crlf_file_explains_original_match": true
+  },
+  "non_claims": {
+    "root_cause_analysis_is_not_new_repair": true,
+    "hash_cause_finding_is_not_semantic_validation": true,
+    "hash_match_is_not_evidence_sufficiency": true,
+    "path_hash_evidence_is_not_source_publication": true
+  },
+  "items": [
+    {
+      "path": "pom.xml",
+      "file_type": "maven_pom",
+      "candidate_links": [
+        "DEP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "f43c621b0c2921a8aaf8d09f498d21b4d82b660355c07f33e475bd46c2b43181",
+      "git_object_byte_sha256": "2b9b53c2973a00b0f5dc73bdd0b893735c381a116043360248b5ebdec20bf736",
+      "crlf_normalized_git_byte_sha256": "f43c621b0c2921a8aaf8d09f498d21b4d82b660355c07f33e475bd46c2b43181",
+      "working_tree_sha256": "f43c621b0c2921a8aaf8d09f498d21b4d82b660355c07f33e475bd46c2b43181",
+      "v0_4_1_corrected_hash": "2b9b53c2973a00b0f5dc73bdd0b893735c381a116043360248b5ebdec20bf736",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/CrashController.java",
+      "file_type": "java_controller",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "b3ba95550112c4f9d34f959ae51921045278b2fc76abf3b42d1b5ae971faf1bf",
+      "git_object_byte_sha256": "1a297e09f162ac5917ab8bc1bbba50b0bd4702d16a02229874a29d384eae7173",
+      "crlf_normalized_git_byte_sha256": "b3ba95550112c4f9d34f959ae51921045278b2fc76abf3b42d1b5ae971faf1bf",
+      "working_tree_sha256": "b3ba95550112c4f9d34f959ae51921045278b2fc76abf3b42d1b5ae971faf1bf",
+      "v0_4_1_corrected_hash": "1a297e09f162ac5917ab8bc1bbba50b0bd4702d16a02229874a29d384eae7173",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/OwnerController.java",
+      "file_type": "java_controller",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "e281dfa4df1dfe203d8d640160acc6f23063d3034d07bcd4af3300a531b325fe",
+      "git_object_byte_sha256": "4ed4411a2c412113d59067ff4be4c05bb26050fc6e23b606a6e6d6924b48489b",
+      "crlf_normalized_git_byte_sha256": "e281dfa4df1dfe203d8d640160acc6f23063d3034d07bcd4af3300a531b325fe",
+      "working_tree_sha256": "e281dfa4df1dfe203d8d640160acc6f23063d3034d07bcd4af3300a531b325fe",
+      "v0_4_1_corrected_hash": "4ed4411a2c412113d59067ff4be4c05bb26050fc6e23b606a6e6d6924b48489b",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/PetController.java",
+      "file_type": "java_controller",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "fad4e480e026e2e664357e989f38f49c81a90d408de4b8ac0b3b1537ad5738e7",
+      "git_object_byte_sha256": "b3a2f5bc78c9671b617dc582fa9c3493ad487d384ec43b4e570810c78ee53e4d",
+      "crlf_normalized_git_byte_sha256": "fad4e480e026e2e664357e989f38f49c81a90d408de4b8ac0b3b1537ad5738e7",
+      "working_tree_sha256": "fad4e480e026e2e664357e989f38f49c81a90d408de4b8ac0b3b1537ad5738e7",
+      "v0_4_1_corrected_hash": "b3a2f5bc78c9671b617dc582fa9c3493ad487d384ec43b4e570810c78ee53e4d",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/VetController.java",
+      "file_type": "java_controller",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "fd6ef1780e8dfe40fd1dbde54db8724274cd6377b3e1988c21573effb0befec9",
+      "git_object_byte_sha256": "bbd51d87b798ae509b15b52c17755272b262ad79363eee408644df86e60ef1fd",
+      "crlf_normalized_git_byte_sha256": "fd6ef1780e8dfe40fd1dbde54db8724274cd6377b3e1988c21573effb0befec9",
+      "working_tree_sha256": "fd6ef1780e8dfe40fd1dbde54db8724274cd6377b3e1988c21573effb0befec9",
+      "v0_4_1_corrected_hash": "bbd51d87b798ae509b15b52c17755272b262ad79363eee408644df86e60ef1fd",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/VisitController.java",
+      "file_type": "java_controller",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "d73f8612846db62d18336f4b633fb6547bd0f4240ef38d255a9f71696d1c9c95",
+      "git_object_byte_sha256": "c4879b7799498f2f9dbc21b763d04e341db6b6d8f028a1f77537552b068e3bb5",
+      "crlf_normalized_git_byte_sha256": "d73f8612846db62d18336f4b633fb6547bd0f4240ef38d255a9f71696d1c9c95",
+      "working_tree_sha256": "d73f8612846db62d18336f4b633fb6547bd0f4240ef38d255a9f71696d1c9c95",
+      "v0_4_1_corrected_hash": "c4879b7799498f2f9dbc21b763d04e341db6b6d8f028a1f77537552b068e3bb5",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/resources/spring/business-config.xml",
+      "file_type": "spring_xml",
+      "candidate_links": [
+        "CFG-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "757a216f4c716c78952a9987a66d878529d3b47eeb8d72d466a5ab6db01fb177",
+      "git_object_byte_sha256": "9e254940c69875037649cba2cdb6d15b58aaed79299f13556678612a0873647a",
+      "crlf_normalized_git_byte_sha256": "757a216f4c716c78952a9987a66d878529d3b47eeb8d72d466a5ab6db01fb177",
+      "working_tree_sha256": "757a216f4c716c78952a9987a66d878529d3b47eeb8d72d466a5ab6db01fb177",
+      "v0_4_1_corrected_hash": "9e254940c69875037649cba2cdb6d15b58aaed79299f13556678612a0873647a",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/resources/spring/datasource-config.xml",
+      "file_type": "spring_xml",
+      "candidate_links": [
+        "CFG-001"
+      ],
+      "line_ending_class_from_git_bytes": "crlf",
+      "v0_4_0_published_hash": "e58ef4ee625c8985dbf02f3d503099e4e56d002351ab089cec50ad462ef6f23f",
+      "git_object_byte_sha256": "e58ef4ee625c8985dbf02f3d503099e4e56d002351ab089cec50ad462ef6f23f",
+      "crlf_normalized_git_byte_sha256": "e58ef4ee625c8985dbf02f3d503099e4e56d002351ab089cec50ad462ef6f23f",
+      "working_tree_sha256": "e58ef4ee625c8985dbf02f3d503099e4e56d002351ab089cec50ad462ef6f23f",
+      "v0_4_1_corrected_hash": "e58ef4ee625c8985dbf02f3d503099e4e56d002351ab089cec50ad462ef6f23f",
+      "matches_git_object_bytes": true,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/resources/spring/mvc-core-config.xml",
+      "file_type": "spring_xml",
+      "candidate_links": [
+        "CFG-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "37f6e350dd08bc67f22477b7dd6baa89710bafbf64741461396fa52587b96630",
+      "git_object_byte_sha256": "accffff5ff7471ce5f9531be187d05aedd8e278138fdf25e17f38ac19bc59f73",
+      "crlf_normalized_git_byte_sha256": "37f6e350dd08bc67f22477b7dd6baa89710bafbf64741461396fa52587b96630",
+      "working_tree_sha256": "37f6e350dd08bc67f22477b7dd6baa89710bafbf64741461396fa52587b96630",
+      "v0_4_1_corrected_hash": "accffff5ff7471ce5f9531be187d05aedd8e278138fdf25e17f38ac19bc59f73",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/resources/spring/mvc-view-config.xml",
+      "file_type": "spring_xml",
+      "candidate_links": [
+        "CFG-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "f5d8684220f6aa18465ce5b6ef619f688ab1074f9a4ee0e6b2b1b8c98e254c9a",
+      "git_object_byte_sha256": "1af9dbedb545451398b4742e9166336551816a86a5ae85091fcd0f81a93e8b63",
+      "crlf_normalized_git_byte_sha256": "f5d8684220f6aa18465ce5b6ef619f688ab1074f9a4ee0e6b2b1b8c98e254c9a",
+      "working_tree_sha256": "f5d8684220f6aa18465ce5b6ef619f688ab1074f9a4ee0e6b2b1b8c98e254c9a",
+      "v0_4_1_corrected_hash": "1af9dbedb545451398b4742e9166336551816a86a5ae85091fcd0f81a93e8b63",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/resources/spring/tools-config.xml",
+      "file_type": "spring_xml",
+      "candidate_links": [
+        "CFG-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "aea521de0f922362c06555593fc0ae6ddcf246d10c624c91e23faf30a1534db9",
+      "git_object_byte_sha256": "f6f7a70edbd8091e9a06e65d835295fbb179be940733a15adc515c8aba7b30cb",
+      "crlf_normalized_git_byte_sha256": "aea521de0f922362c06555593fc0ae6ddcf246d10c624c91e23faf30a1534db9",
+      "working_tree_sha256": "aea521de0f922362c06555593fc0ae6ddcf246d10c624c91e23faf30a1534db9",
+      "v0_4_1_corrected_hash": "f6f7a70edbd8091e9a06e65d835295fbb179be940733a15adc515c8aba7b30cb",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/exception.jsp",
+      "file_type": "jsp",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "ef8e373a2653314d867a58c90e62c715093993ca972c83f535a6045ac1e0730f",
+      "git_object_byte_sha256": "950074edd1d9a7fd2034acfd5b9e72fd486c925be32c63c08f171c9ff97244b5",
+      "crlf_normalized_git_byte_sha256": "ef8e373a2653314d867a58c90e62c715093993ca972c83f535a6045ac1e0730f",
+      "working_tree_sha256": "ef8e373a2653314d867a58c90e62c715093993ca972c83f535a6045ac1e0730f",
+      "v0_4_1_corrected_hash": "950074edd1d9a7fd2034acfd5b9e72fd486c925be32c63c08f171c9ff97244b5",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/createOrUpdateOwnerForm.jsp",
+      "file_type": "jsp",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "5d2e961250802c225b5cf402ff56c54840a8639d41fee9ed0eaf8b7c3398987e",
+      "git_object_byte_sha256": "5cf9ea45bc45beb183d139a670e2ac51f1b53d5cedd2bb92ad2064be1d48fa66",
+      "crlf_normalized_git_byte_sha256": "5d2e961250802c225b5cf402ff56c54840a8639d41fee9ed0eaf8b7c3398987e",
+      "working_tree_sha256": "5d2e961250802c225b5cf402ff56c54840a8639d41fee9ed0eaf8b7c3398987e",
+      "v0_4_1_corrected_hash": "5cf9ea45bc45beb183d139a670e2ac51f1b53d5cedd2bb92ad2064be1d48fa66",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/findOwners.jsp",
+      "file_type": "jsp",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "4091326577bf33c2e42855c87d8f6304ae97ac4e4c2cd59ebdd4c908274ed194",
+      "git_object_byte_sha256": "6729cc4626d3ee4fe7fe745f0692fcad16afeb932d521f8935556cbbc3d1a23b",
+      "crlf_normalized_git_byte_sha256": "4091326577bf33c2e42855c87d8f6304ae97ac4e4c2cd59ebdd4c908274ed194",
+      "working_tree_sha256": "4091326577bf33c2e42855c87d8f6304ae97ac4e4c2cd59ebdd4c908274ed194",
+      "v0_4_1_corrected_hash": "6729cc4626d3ee4fe7fe745f0692fcad16afeb932d521f8935556cbbc3d1a23b",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/ownerDetails.jsp",
+      "file_type": "jsp",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "85b45beb9d31d3654ee9b814957ab5a4f801e4e149a065c774bb40347b0c113b",
+      "git_object_byte_sha256": "9611754d56dc9baa6b467a7fda38142f1eac0243b533739ef94e32e2157e1169",
+      "crlf_normalized_git_byte_sha256": "85b45beb9d31d3654ee9b814957ab5a4f801e4e149a065c774bb40347b0c113b",
+      "working_tree_sha256": "85b45beb9d31d3654ee9b814957ab5a4f801e4e149a065c774bb40347b0c113b",
+      "v0_4_1_corrected_hash": "9611754d56dc9baa6b467a7fda38142f1eac0243b533739ef94e32e2157e1169",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/ownersList.jsp",
+      "file_type": "jsp",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "df860cef39eba841405b68241fae168e86e4d76a91e61572f272333188ebebfa",
+      "git_object_byte_sha256": "56f3aaca45e6809ddd20b2e8ddd43bec67c1a68030f6003ed433fe305850ee11",
+      "crlf_normalized_git_byte_sha256": "df860cef39eba841405b68241fae168e86e4d76a91e61572f272333188ebebfa",
+      "working_tree_sha256": "df860cef39eba841405b68241fae168e86e4d76a91e61572f272333188ebebfa",
+      "v0_4_1_corrected_hash": "56f3aaca45e6809ddd20b2e8ddd43bec67c1a68030f6003ed433fe305850ee11",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/pets/createOrUpdatePetForm.jsp",
+      "file_type": "jsp",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "d2afd67b1076b3a7034ff976cadf6670590f7ea041a8c3968c9e76e887f05ed2",
+      "git_object_byte_sha256": "eab62273646ebcc16b5b3aac467ed68ead99e9eb62e3d4a8d2dbf449587d5243",
+      "crlf_normalized_git_byte_sha256": "d2afd67b1076b3a7034ff976cadf6670590f7ea041a8c3968c9e76e887f05ed2",
+      "working_tree_sha256": "d2afd67b1076b3a7034ff976cadf6670590f7ea041a8c3968c9e76e887f05ed2",
+      "v0_4_1_corrected_hash": "eab62273646ebcc16b5b3aac467ed68ead99e9eb62e3d4a8d2dbf449587d5243",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/pets/createOrUpdateVisitForm.jsp",
+      "file_type": "jsp",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "0f695fc02c54efa3eab91c58ca14b37e0eb7d70dd0a8ff2e1f390dc0ae93cc81",
+      "git_object_byte_sha256": "fb14844923a28e943c884592023f1b0bf20a878d4730585f99500699deec830d",
+      "crlf_normalized_git_byte_sha256": "0f695fc02c54efa3eab91c58ca14b37e0eb7d70dd0a8ff2e1f390dc0ae93cc81",
+      "working_tree_sha256": "0f695fc02c54efa3eab91c58ca14b37e0eb7d70dd0a8ff2e1f390dc0ae93cc81",
+      "v0_4_1_corrected_hash": "fb14844923a28e943c884592023f1b0bf20a878d4730585f99500699deec830d",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/vets/vetList.jsp",
+      "file_type": "jsp",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "a7aaaa2f5b5954501125f130c95e673fa843aa9159679edd0a6db70d53b714e6",
+      "git_object_byte_sha256": "fd29c44b22d9fef09943ccb060fe243f50836b43f74e4bc963017f9346664e1a",
+      "crlf_normalized_git_byte_sha256": "a7aaaa2f5b5954501125f130c95e673fa843aa9159679edd0a6db70d53b714e6",
+      "working_tree_sha256": "a7aaaa2f5b5954501125f130c95e673fa843aa9159679edd0a6db70d53b714e6",
+      "v0_4_1_corrected_hash": "fd29c44b22d9fef09943ccb060fe243f50836b43f74e4bc963017f9346664e1a",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/welcome.jsp",
+      "file_type": "jsp",
+      "candidate_links": [
+        "JSP-001"
+      ],
+      "line_ending_class_from_git_bytes": "lf",
+      "v0_4_0_published_hash": "155bc2ce787a1be8429fe749af8db18152b54df3ad8d2d1709bf2d662e14ebfc",
+      "git_object_byte_sha256": "b30ebe6cb9f1c43b0faff54b60325f07e9e344cc990678d0a925440ee970f7cd",
+      "crlf_normalized_git_byte_sha256": "155bc2ce787a1be8429fe749af8db18152b54df3ad8d2d1709bf2d662e14ebfc",
+      "working_tree_sha256": "155bc2ce787a1be8429fe749af8db18152b54df3ad8d2d1709bf2d662e14ebfc",
+      "v0_4_1_corrected_hash": "b30ebe6cb9f1c43b0faff54b60325f07e9e344cc990678d0a925440ee970f7cd",
+      "matches_git_object_bytes": false,
+      "matches_crlf_normalized_git_bytes": true,
+      "matches_working_tree_bytes": true,
+      "matches_v0_4_1_corrected_hash": true
+    }
+  ]
+}

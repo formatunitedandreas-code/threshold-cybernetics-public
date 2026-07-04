@@ -16,4 +16,6 @@ v0.4.0 addresses the criticism that candidate detection had only been tested on 
 
 v0.4.1 repairs the v0.4.0 hash provenance issue by using Git-object-byte hashing and CI verification.
 
+The v0.4.0 hash provenance RCA classifies the cause as confirmed line-ending normalization: all v0.4.0 published hashes matched CRLF-normalized Git bytes, while v0.4.1 hashes matched Git object bytes.
+
 The response is intentionally bounded: public evidence improves reproducibility, but it does not establish enterprise validation, full toolchain integration, security remediation, compliance certification, deployment readiness, autonomous refactoring capability, or runtime authority.
