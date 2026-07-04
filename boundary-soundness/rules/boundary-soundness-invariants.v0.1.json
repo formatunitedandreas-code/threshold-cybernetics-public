@@ -1,6 +1,7 @@
 {
   "rule_set_id": "boundary_soundness_invariants_v0_1",
   "mode": "readout_only_reachability_invariant_check",
+  "invariant_evaluation": "derived_from_reachable_states_and_forbidden_markings",
   "authority_laundering_invariants": {
     "candidate_to_execution_reachable": false,
     "evidence_to_authority_reachable": false,

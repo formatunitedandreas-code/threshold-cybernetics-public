@@ -7,7 +7,37 @@
     "v0.4.1_git_byte_hash_provenance",
     "v0.5_risk_hint_gradation",
     "v0.6_policy_mapping",
-    "v0.7_scoped_receipt_validation"
+    "v0.7_scoped_receipt_validation",
+    "phase2_dep_001_authorized_fork_push_draft_pr_observed"
+  ],
+  "input_artifact_checks": [
+    {
+      "artifact": "v0.5_risk_gradation",
+      "status": "verified",
+      "details": {
+        "DEP_001": "medium",
+        "CFG_001": "medium",
+        "JSP_001": "high"
+      }
+    },
+    {
+      "artifact": "v0.6_policy_mapping",
+      "status": "verified",
+      "details": {
+        "DEP_001": "standard_human_review_required",
+        "CFG_001": "standard_human_review_required",
+        "JSP_001": "strict_human_review_required"
+      }
+    },
+    {
+      "artifact": "v0.7_receipt_validation",
+      "status": "verified",
+      "details": {
+        "DEP_001": "valid_scope_match_readout_only",
+        "CFG_001": "missing_receipt_stop_no_action",
+        "JSP_001": "scope_mismatch_hold_strict_review_required"
+      }
+    }
   ],
   "candidates": [
     "DEP-001",
@@ -18,31 +48,48 @@
     "patch_authorized",
     "execution_authorized",
     "source_mutated",
-    "pr_created",
+    "unauthorized_pr_created",
     "merge_authorized",
     "deployment_authorized",
     "deployment_readiness_claimed",
     "security_fix_claimed",
     "product_readiness_claimed",
     "compliance_certified",
-    "runtime_authority_granted"
+    "runtime_authority_granted",
+    "action_allowed",
+    "approval_granted",
+    "upstream_acceptance_claimed",
+    "maintainer_approval_claimed"
   ],
   "candidate_results": [
     {
       "candidate_id": "DEP-001",
       "reachable_states": [
         "DEP-001:candidate_detected",
+        "DEP-001:draft_pr_created_with_human_authorized_fork_scope",
         "DEP-001:evidence_hash_verified",
+        "DEP-001:operator_fork_push_authorized",
+        "DEP-001:phase2_human_authorized_local_patch_candidate",
         "DEP-001:receipt_scope_match_readout_only",
         "DEP-001:risk_tier_medium",
         "DEP-001:standard_human_review_required",
+        "authorized_draft_pr_created_readout_only",
         "readout_only_no_action",
         "valid_scope_match_readout_only"
       ],
       "reachable_terminal_states": [
+        "authorized_draft_pr_created_readout_only",
         "readout_only_no_action",
         "valid_scope_match_readout_only"
       ],
+      "expected_terminal_states": [
+        "authorized_draft_pr_created_readout_only",
+        "readout_only_no_action",
+        "valid_scope_match_readout_only"
+      ],
+      "missing_expected_terminal_states": [],
+      "unexpected_terminal_states": [],
+      "terminal_expectations_satisfied": true,
       "reachable_forbidden_markings": [],
       "forbidden_authority_reachable": false
     },
@@ -59,6 +106,12 @@
       "reachable_terminal_states": [
         "stop_no_action"
       ],
+      "expected_terminal_states": [
+        "stop_no_action"
+      ],
+      "missing_expected_terminal_states": [],
+      "unexpected_terminal_states": [],
+      "terminal_expectations_satisfied": true,
       "reachable_forbidden_markings": [],
       "forbidden_authority_reachable": false
     },
@@ -77,6 +130,13 @@
         "hold_for_manual_triage",
         "hold_human_review_required"
       ],
+      "expected_terminal_states": [
+        "hold_for_manual_triage",
+        "hold_human_review_required"
+      ],
+      "missing_expected_terminal_states": [],
+      "unexpected_terminal_states": [],
+      "terminal_expectations_satisfied": true,
       "reachable_forbidden_markings": [],
       "forbidden_authority_reachable": false
     }

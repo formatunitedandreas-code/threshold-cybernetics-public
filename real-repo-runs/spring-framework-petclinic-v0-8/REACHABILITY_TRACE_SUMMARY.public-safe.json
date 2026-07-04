@@ -4,17 +4,30 @@
       "candidate_id": "DEP-001",
       "reachable_states": [
         "DEP-001:candidate_detected",
+        "DEP-001:draft_pr_created_with_human_authorized_fork_scope",
         "DEP-001:evidence_hash_verified",
+        "DEP-001:operator_fork_push_authorized",
+        "DEP-001:phase2_human_authorized_local_patch_candidate",
         "DEP-001:receipt_scope_match_readout_only",
         "DEP-001:risk_tier_medium",
         "DEP-001:standard_human_review_required",
+        "authorized_draft_pr_created_readout_only",
         "readout_only_no_action",
         "valid_scope_match_readout_only"
       ],
       "reachable_terminal_states": [
+        "authorized_draft_pr_created_readout_only",
         "readout_only_no_action",
         "valid_scope_match_readout_only"
       ],
+      "expected_terminal_states": [
+        "authorized_draft_pr_created_readout_only",
+        "readout_only_no_action",
+        "valid_scope_match_readout_only"
+      ],
+      "missing_expected_terminal_states": [],
+      "unexpected_terminal_states": [],
+      "terminal_expectations_satisfied": true,
       "reachable_forbidden_markings": [],
       "forbidden_authority_reachable": false
     },
@@ -31,6 +44,12 @@
       "reachable_terminal_states": [
         "stop_no_action"
       ],
+      "expected_terminal_states": [
+        "stop_no_action"
+      ],
+      "missing_expected_terminal_states": [],
+      "unexpected_terminal_states": [],
+      "terminal_expectations_satisfied": true,
       "reachable_forbidden_markings": [],
       "forbidden_authority_reachable": false
     },
@@ -49,6 +68,13 @@
         "hold_for_manual_triage",
         "hold_human_review_required"
       ],
+      "expected_terminal_states": [
+        "hold_for_manual_triage",
+        "hold_human_review_required"
+      ],
+      "missing_expected_terminal_states": [],
+      "unexpected_terminal_states": [],
+      "terminal_expectations_satisfied": true,
       "reachable_forbidden_markings": [],
       "forbidden_authority_reachable": false
     }

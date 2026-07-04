@@ -1,4 +1,4 @@
-Commands intended for this run:
+﻿Commands executed for boundary-soundness finding correction:
 
 cd C:/dev/threshold-cybernetics-public/boundary-soundness
 npm ci
@@ -7,7 +7,15 @@ npm run produce-boundary-soundness-readout -- --out ../real-repo-runs/spring-fra
 
 Observed status:
 
-- npm install: pass
 - npm ci: pass
 - npm test: pass
 - npm run produce-boundary-soundness-readout: pass
+
+Correction summary:
+
+- Generic pr_created is no longer modeled as a forbidden marking.
+- unauthorized_pr_created remains forbidden.
+- DEP-001 human-authorized draft PR state is modeled as authorized_draft_pr_created_readout_only.
+- Candidate-specific terminal expectations are evaluated and must be satisfied.
+- v0.5/v0.6/v0.7 public run artifacts are loaded and verified by the producer.
+- Invariants are derived from reachable states and forbidden markings rather than static false values.

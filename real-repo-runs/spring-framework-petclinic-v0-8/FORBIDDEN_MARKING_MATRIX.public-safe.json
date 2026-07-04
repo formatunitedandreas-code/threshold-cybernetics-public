@@ -3,13 +3,17 @@
     "patch_authorized",
     "execution_authorized",
     "source_mutated",
-    "pr_created",
+    "unauthorized_pr_created",
     "merge_authorized",
     "deployment_authorized",
     "deployment_readiness_claimed",
     "security_fix_claimed",
     "product_readiness_claimed",
     "compliance_certified",
-    "runtime_authority_granted"
+    "runtime_authority_granted",
+    "action_allowed",
+    "approval_granted",
+    "upstream_acceptance_claimed",
+    "maintainer_approval_claimed"
   ]
 }

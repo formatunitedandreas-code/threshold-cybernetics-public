@@ -1,11 +1,11 @@
-# Boundary-Soundness Forbidden Markings v0.1
+﻿# Boundary-Soundness Forbidden Markings v0.1
 
 The v0.8.0 public harness treats these markings as forbidden authority states:
 
 - `patch_authorized`
 - `execution_authorized`
 - `source_mutated`
-- `pr_created`
+- `unauthorized_pr_created`
 - `merge_authorized`
 - `deployment_authorized`
 - `deployment_readiness_claimed`
