@@ -1,0 +1,23 @@
+name: Scoped Human Authorization Receipt Validation Harness
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  authorization-receipts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install authorization receipt harness
+        working-directory: authorization-receipts
+        run: npm ci
+
+      - name: Test authorization receipt harness
+        working-directory: authorization-receipts
+        run: npm test
+
+      - name: Produce receipt validation
+        working-directory: authorization-receipts
+        run: npm run produce-receipt-validation -- --policy-mapping ../real-repo-runs/spring-framework-petclinic-v0-6/policy-mapping.public-safe.json --receipts ./receipts --out ../real-repo-runs/spring-framework-petclinic-v0-7/receipt-validation.ci.public-safe.json

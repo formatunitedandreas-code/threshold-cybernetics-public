@@ -142,3 +142,22 @@ It does not grant authorization.
 - Policy Lane != Execution Permission
 - Risk Tier != Authority
 - Human Review Required != Approval Granted
+
+## v0.7.0 - Scoped Human Authorization Receipt Validation
+
+v0.7.0 adds a bounded public receipt-validation harness.
+
+It checks whether a synthetic human authorization receipt matches the required review scope from the v0.6 policy mapping.
+
+Example outcomes:
+
+- valid standard review scope -> `valid_scope_match_readout_only`
+- missing receipt -> `missing_receipt_stop_no_action`
+- lower scope for strict lane -> `scope_mismatch_hold_strict_review_required`
+
+- Receipt Validation != Patch Execution
+- Receipt Valid != Action Allowed
+- Receipt Scope Match != Runtime Authority
+- Human Review Required != Approval Granted
+
+This release does not authorize patches, PRs, merge, deployment, security remediation, production use, or runtime action.

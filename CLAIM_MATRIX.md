@@ -35,6 +35,9 @@ runtime_authority_claimed: false
 - v0.6.0 maps bounded risk-hint tiers to non-authorizing review lanes.
 - Policy lanes define required human review paths only.
 - Policy Mapping does not grant authorization.
+- v0.7.0 validates synthetic human authorization receipt scope against required policy-lane scope.
+- v0.7.0 distinguishes valid scope match, missing receipt, scope mismatch, and invalid target.
+- v0.7.0 keeps receipt validation non-authorizing.
 - Open-source Spring Framework PetClinic-style demo scope.
 - Governed refactoring readiness as review/process readiness.
 - Controlled non-execution and Stop/No-Action as intended governance behavior.
@@ -74,6 +77,10 @@ runtime_authority_claimed: false
 - Threshold authorizes patches based on risk tiers.
 - Threshold automatically opens PRs based on policy lanes.
 - Threshold authorizes patches based on policy lanes.
+- Threshold authorizes patches based on receipts.
+- Threshold automatically opens PRs after receipt validation.
+- Threshold executes changes after receipt validation.
+- Threshold grants deployment approval.
 - Threshold is production-ready.
 - Threshold performs security remediation.
 - Threshold is deployment-ready.
@@ -102,3 +109,7 @@ runtime_authority_claimed: false
 - Policy Mapping != Patch Approval
 - Policy Mapping != Execution Permission
 - Policy Mapping != PR Creation
+- Receipt Validation != Patch Execution
+- Receipt Valid != Action Allowed
+- Receipt Scope Match != Runtime Authority
+- Human Authorization Receipt != Product Readiness

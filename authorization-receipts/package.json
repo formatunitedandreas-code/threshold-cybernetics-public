@@ -1,0 +1,15 @@
+{
+  "name": "@threshold-cybernetics/public-authorization-receipt-harness",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "produce-receipt-validation": "tsx scripts/produce-receipt-validation.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

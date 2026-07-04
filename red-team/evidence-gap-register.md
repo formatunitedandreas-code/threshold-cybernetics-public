@@ -56,4 +56,21 @@ Remaining after v0.6:
 - external independent review beyond reproducibility checks
 - private core validation
 
+v0.7 addresses the question of how policy-lane requirements can be checked against scoped human authorization receipts by adding a non-authorizing synthetic receipt validation harness.
+
+Remaining after v0.7:
+
+- real human authorization workflow
+- cryptographic receipt signatures
+- authorization expiry validation
+- authorization revocation
+- authorization audit trail
+- actual patch branch proposal after scoped validation
+- semantic breaking-change detection
+- mature risk scoring
+- enterprise-scale validation
+- real OpenRewrite integration
+- external independent review beyond reproducibility checks
+- private core validation
+
 These gaps are not failures of the harness. They are explicit boundaries for future evidence work.

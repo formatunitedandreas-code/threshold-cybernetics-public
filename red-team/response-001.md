@@ -22,4 +22,6 @@ v0.5 addresses the criticism that previous risk hints were static by adding boun
 
 v0.6 addresses the question of how bounded risk tiers translate into review requirements by adding a non-authorizing policy-as-code mapping layer.
 
+v0.7 addresses the question of how policy-lane requirements can be checked against scoped human authorization receipts by adding a non-authorizing synthetic receipt validation harness.
+
 The response is intentionally bounded: public evidence improves reproducibility, but it does not establish enterprise validation, full toolchain integration, security remediation, compliance certification, deployment readiness, autonomous refactoring capability, or runtime authority.
