@@ -29,6 +29,9 @@ runtime_authority_claimed: false
 - v0.4.1 includes a public hash verification script.
 - v0.4.1 supersedes v0.4.0 for evidence hash provenance.
 - v0.4.0 candidate path detection remains reproducible.
+- v0.5.0 assigns bounded non-authorizing risk-hint tiers to public candidate summaries.
+- Risk hint tiers are review-priority categories only.
+- v0.5.0 uses v0.4.1 Git-byte-verified evidence as input.
 - Open-source Spring Framework PetClinic-style demo scope.
 - Governed refactoring readiness as review/process readiness.
 - Controlled non-execution and Stop/No-Action as intended governance behavior.
@@ -62,6 +65,13 @@ runtime_authority_claimed: false
 - v0.4.1 proves mature risk scoring.
 - v0.4.1 proves product readiness.
 - v0.4.1 proves security remediation.
+- Threshold performs mature risk scoring.
+- Threshold performs semantic breaking-change detection.
+- Threshold detects all real refactoring risks.
+- Threshold authorizes patches based on risk tiers.
+- Threshold is production-ready.
+- Threshold performs security remediation.
+- Threshold is deployment-ready.
 
 ## Non-Claims
 

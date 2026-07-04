@@ -1,0 +1,15 @@
+{
+  "name": "@threshold-cybernetics/public-risk-gradation-harness",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "produce-risk-gradation": "tsx scripts/produce-risk-gradation.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

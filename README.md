@@ -107,3 +107,18 @@ A root-cause analysis for the v0.4.0 hash mismatch is available under:
 `real-repo-runs/spring-framework-petclinic-v0-4-1/HASH_ROOT_CAUSE_ANALYSIS_V0_1.md`
 
 The RCA records the v0.4.0 line-ending-sensitive hash provenance failure and the v0.4.1 Git-object-byte repair.
+
+## v0.5.0 - Risk Hint Gradation Harness
+
+v0.5.0 adds a bounded public risk-hint gradation harness.
+
+It takes the v0.4.1 Git-byte-verified candidate/evidence summaries and assigns non-authorizing review-priority tiers:
+
+- `medium` for dependency/plugin review surfaces
+- `medium` for Spring configuration inventory surfaces
+- `high` for JSP/MVC UI-routing/form-binding-adjacent surfaces
+- `unknown` for missing or insufficient evidence
+
+This is not mature risk scoring and not semantic breaking-change detection.
+
+Risk tiers do not authorize patches, PRs, execution, deployment, security remediation, or production use.

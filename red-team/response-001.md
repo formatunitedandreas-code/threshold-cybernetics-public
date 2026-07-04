@@ -18,4 +18,6 @@ v0.4.1 repairs the v0.4.0 hash provenance issue by using Git-object-byte hashing
 
 The v0.4.0 hash provenance RCA classifies the cause as confirmed line-ending normalization: all v0.4.0 published hashes matched CRLF-normalized Git bytes, while v0.4.1 hashes matched Git object bytes.
 
+v0.5 addresses the criticism that previous risk hints were static by adding bounded rule-based risk-hint tiers over Git-byte-verified candidate/evidence summaries.
+
 The response is intentionally bounded: public evidence improves reproducibility, but it does not establish enterprise validation, full toolchain integration, security remediation, compliance certification, deployment readiness, autonomous refactoring capability, or runtime authority.

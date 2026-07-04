@@ -30,4 +30,16 @@ Response: v0.4.1 repaired the hash policy and this RCA investigates the cause.
 
 Remaining: future evidence runs must keep Git-object-byte hash verification in CI before any risk-gradation claims.
 
+v0.5 addresses the criticism that previous risk hints were static by adding bounded rule-based risk-hint tiers over Git-byte-verified candidate/evidence summaries.
+
+Remaining after v0.5:
+
+- semantic breaking-change detection
+- mature risk scoring
+- false-positive reduction
+- enterprise-scale validation
+- real OpenRewrite integration
+- external independent review beyond reproducibility checks
+- private core validation
+
 These gaps are not failures of the harness. They are explicit boundaries for future evidence work.

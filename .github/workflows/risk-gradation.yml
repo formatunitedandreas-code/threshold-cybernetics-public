@@ -1,0 +1,23 @@
+name: Risk Hint Gradation Harness
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  risk-gradation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install risk gradation harness
+        working-directory: risk-gradation
+        run: npm ci
+
+      - name: Test risk gradation harness
+        working-directory: risk-gradation
+        run: npm test
+
+      - name: Produce risk gradation
+        working-directory: risk-gradation
+        run: npm run produce-risk-gradation -- --candidate-summary ../real-repo-runs/spring-framework-petclinic-v0-4-1/detected-candidates.summary.json --evidence-index ../real-repo-runs/spring-framework-petclinic-v0-4-1/evidence-index.git-byte-hashes.public-safe.json --out ../real-repo-runs/spring-framework-petclinic-v0-5/risk-gradation.ci.public-safe.json

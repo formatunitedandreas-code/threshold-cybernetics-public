@@ -1,0 +1,20 @@
+{
+  "run_id": "spring-framework-petclinic-risk-hint-gradation-v0-5",
+  "release_target": "v0.5.0-risk-hint-gradation-harness",
+  "public_repo": "formatunitedandreas-code/threshold-cybernetics-public",
+  "target_repo": "spring-petclinic/spring-framework-petclinic",
+  "target_commit": "bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a",
+  "input_hash_policy": "git_object_bytes_sha256",
+  "v0_4_1_hash_verification_required": true,
+  "v0_4_1_hash_verification_passed": true,
+  "risk_gradation_performed": true,
+  "risk_gradation_model": "bounded_rule_based_risk_hint_tiers_v0_1",
+  "mature_risk_scoring_claimed": false,
+  "semantic_breaking_change_detection_claimed": false,
+  "patches_created": 0,
+  "source_mutated": false,
+  "prs_created": 0,
+  "security_fix_claimed": false,
+  "deployment_readiness_claimed": false,
+  "product_readiness_claimed": false
+}

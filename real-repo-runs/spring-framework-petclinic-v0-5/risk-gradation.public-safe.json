@@ -1,0 +1,99 @@
+{
+  "run_id": "spring-framework-petclinic-risk-hint-gradation-v0-5",
+  "target_repo": "spring-petclinic/spring-framework-petclinic",
+  "target_commit": "bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a",
+  "input_hash_policy": "git_object_bytes_sha256",
+  "risk_gradation_model": "bounded_rule_based_risk_hint_tiers_v0_1",
+  "risk_tier_authorizes_execution": false,
+  "risk_tier_authorizes_patch": false,
+  "outputs": [
+    {
+      "candidate_id": "DEP-001",
+      "candidate_type": "dependency_plugin_review_candidate",
+      "risk_hint_tier": "medium",
+      "risk_hint_basis": [
+        "dependency_version_surface",
+        "plugin_version_surface",
+        "transitive_dependency_possible"
+      ],
+      "evidence_paths_count": 1,
+      "evidence_hashes_present": true,
+      "review_recommendation": "human_review_required_before_any_patch_branch",
+      "human_review_required": true,
+      "authorization_granted": false,
+      "patch_authorized": false,
+      "source_mutated": false,
+      "pr_created": false,
+      "deployment_readiness_claimed": false,
+      "security_fix_claimed": false,
+      "semantic_breaking_change_detection_claimed": false,
+      "mature_risk_scoring_claimed": false,
+      "decision_boundaries": [
+        "Risk Tier != Patch Approval",
+        "Risk Tier != Execution Authorization",
+        "Risk Tier != Security Finding",
+        "Risk Tier != Deployment Readiness",
+        "Risk Tier != Semantic Proof"
+      ]
+    },
+    {
+      "candidate_id": "CFG-001",
+      "candidate_type": "spring_config_inventory_candidate",
+      "risk_hint_tier": "medium",
+      "risk_hint_basis": [
+        "configuration_behavior_surface",
+        "view_resolution_surface",
+        "migration_requires_human_review"
+      ],
+      "evidence_paths_count": 5,
+      "evidence_hashes_present": true,
+      "review_recommendation": "human_review_required_before_config_change",
+      "human_review_required": true,
+      "authorization_granted": false,
+      "patch_authorized": false,
+      "source_mutated": false,
+      "pr_created": false,
+      "deployment_readiness_claimed": false,
+      "security_fix_claimed": false,
+      "semantic_breaking_change_detection_claimed": false,
+      "mature_risk_scoring_claimed": false,
+      "decision_boundaries": [
+        "Risk Tier != Patch Approval",
+        "Risk Tier != Execution Authorization",
+        "Risk Tier != Security Finding",
+        "Risk Tier != Deployment Readiness",
+        "Risk Tier != Semantic Proof"
+      ]
+    },
+    {
+      "candidate_id": "JSP-001",
+      "candidate_type": "jsp_mvc_risk_candidate",
+      "risk_hint_tier": "high",
+      "risk_hint_basis": [
+        "form_binding_surface",
+        "routing_surface",
+        "view_rendering_surface",
+        "ui_behavior_requires_human_review"
+      ],
+      "evidence_paths_count": 14,
+      "evidence_hashes_present": true,
+      "review_recommendation": "stricter_human_review_required_before_ui_or_controller_change",
+      "human_review_required": true,
+      "authorization_granted": false,
+      "patch_authorized": false,
+      "source_mutated": false,
+      "pr_created": false,
+      "deployment_readiness_claimed": false,
+      "security_fix_claimed": false,
+      "semantic_breaking_change_detection_claimed": false,
+      "mature_risk_scoring_claimed": false,
+      "decision_boundaries": [
+        "Risk Tier != Patch Approval",
+        "Risk Tier != Execution Authorization",
+        "Risk Tier != Security Finding",
+        "Risk Tier != Deployment Readiness",
+        "Risk Tier != Semantic Proof"
+      ]
+    }
+  ]
+}

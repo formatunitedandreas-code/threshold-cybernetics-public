@@ -1,0 +1,37 @@
+{
+  "rule_set_id": "risk_hint_gradation_rules_v0_1",
+  "non_claims": [
+    "Risk Hint Gradation is not mature risk scoring",
+    "Risk Tier is not semantic breaking-change detection",
+    "Risk Tier is not patch approval",
+    "Risk Tier is not execution authorization",
+    "Risk Tier is not security remediation",
+    "Risk Tier is not deployment readiness"
+  ],
+  "rules": [
+    {
+      "candidate_type": "dependency_plugin_review_candidate",
+      "base_tier": "medium",
+      "signals": ["dependency_version_surface", "plugin_version_surface", "transitive_dependency_possible"],
+      "review_recommendation": "human_review_required_before_any_patch_branch"
+    },
+    {
+      "candidate_type": "spring_config_inventory_candidate",
+      "base_tier": "medium",
+      "signals": ["configuration_behavior_surface", "view_resolution_surface", "migration_requires_human_review"],
+      "review_recommendation": "human_review_required_before_config_change"
+    },
+    {
+      "candidate_type": "jsp_mvc_risk_candidate",
+      "base_tier": "high",
+      "signals": ["form_binding_surface", "routing_surface", "view_rendering_surface", "ui_behavior_requires_human_review"],
+      "review_recommendation": "stricter_human_review_required_before_ui_or_controller_change"
+    },
+    {
+      "candidate_type": "unknown",
+      "base_tier": "unknown",
+      "signals": [],
+      "review_recommendation": "hold_for_manual_triage"
+    }
+  ]
+}

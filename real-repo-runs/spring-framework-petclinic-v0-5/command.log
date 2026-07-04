@@ -1,0 +1,4 @@
+cd risk-gradation
+npm ci
+npm test
+npm run produce-risk-gradation -- --candidate-summary ../real-repo-runs/spring-framework-petclinic-v0-4-1/detected-candidates.summary.json --evidence-index ../real-repo-runs/spring-framework-petclinic-v0-4-1/evidence-index.git-byte-hashes.public-safe.json --out ../real-repo-runs/spring-framework-petclinic-v0-5/risk-gradation.public-safe.json
