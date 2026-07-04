@@ -27,3 +27,5 @@ v0.7 addresses the question of how policy-lane requirements can be checked again
 v0.8 addresses the question of whether forbidden authority promotions are reachable across the bounded public PetClinic governance path by adding a readout-only Boundary-Soundness reachability harness.
 
 The response is intentionally bounded: public evidence improves reproducibility, but it does not establish enterprise validation, full toolchain integration, security remediation, compliance certification, deployment readiness, autonomous refactoring capability, or runtime authority.
+
+v0.8.1 records the correction: unauthorized PR creation is forbidden, authorized draft PR readout-only is modeled separately, invariants are derived from reachable states, candidate-specific terminals are evaluated, and v0.5/v0.6/v0.7 inputs are loaded and verified.

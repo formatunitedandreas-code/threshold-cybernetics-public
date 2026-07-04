@@ -1,0 +1,23 @@
+{
+  "closeout_id": "boundary_soundness_correction_closeout_v0_8_1",
+  "v0_8_release": "v0.8.0-boundary-soundness-reachability-readout",
+  "v0_8_public_commit": "a3442f9f0ca5b82ec6e5e9935333e3a300f3d7f2",
+  "correction_public_commit": "d4f48011dfbb19acf159041a71059db326ab6299",
+  "corrections": {
+    "pr_created_globally_forbidden": false,
+    "unauthorized_pr_created_forbidden": true,
+    "authorized_draft_pr_created_readout_only_allowed": true,
+    "candidate_specific_terminal_expectations_evaluated": true,
+    "v0_5_v0_6_v0_7_inputs_loaded_and_verified": true,
+    "invariants_derived_from_reachable_states": true
+  },
+  "authority_claims": {
+    "authorizes_execution": false,
+    "authorizes_patch": false,
+    "authorizes_pr": false,
+    "authorizes_merge": false,
+    "authorizes_deployment": false,
+    "runtime_authority_claimed": false
+  },
+  "next_recommended_slice": "boundary_soundness_external_critique_invitation_v0_9_0_or_stop_no_action"
+}

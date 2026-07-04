@@ -191,3 +191,13 @@ The result is a public-safe reachability readout, not runtime enforcement.
 - Boundary Soundness != compliance proof
 - Boundary Soundness != deployment readiness
 - Boundary Soundness != autonomous refactoring
+
+## v0.8.1 - Boundary Soundness Correction Closeout
+
+v0.8.1 records the correction of review findings after v0.8.0.
+
+The corrected model distinguishes `unauthorized_pr_created` from an explicitly human-authorized, readout-only draft PR terminal state for DEP-001.
+
+It also verifies that candidate-specific terminal expectations are evaluated, v0.5/v0.6/v0.7 public inputs are loaded, and invariants are derived from reachable states rather than static false values.
+
+This remains a bounded public reachability readout, not formal verification, runtime enforcement, product readiness, deployment readiness or compliance proof.

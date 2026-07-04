@@ -127,3 +127,21 @@ runtime_authority_claimed: false
 - Boundary Soundness != Runtime Enforcement
 - Boundary Soundness != Compliance Proof
 - Forbidden Marking Unreachable != Action Authority
+
+## v0.8.1 - Boundary Soundness Correction Closeout
+
+Allowed claims:
+
+- v0.8.1 records correction of v0.8 review findings.
+- v0.8.1 distinguishes unauthorized PR creation from authorized draft PR readout-only terminal state.
+- v0.8.1 verifies that v0.8 invariants are derived from reachable states.
+- v0.8.1 verifies candidate-specific terminal expectations.
+- v0.8.1 verifies v0.5/v0.6/v0.7 public input-chain coupling.
+
+Forbidden claims:
+
+- v0.8.1 proves formal workflow soundness.
+- v0.8.1 is BPMN/DMN soundness.
+- v0.8.1 authorizes PRs, merges, deployments or runtime actions.
+- v0.8.1 proves compliance.
+- v0.8.1 proves product readiness.

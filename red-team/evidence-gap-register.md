@@ -94,3 +94,16 @@ Remaining after v0.8:
 - private core validation
 
 These gaps are not failures of the harness. They are explicit boundaries for future evidence work.
+
+v0.8.1 records the correction of v0.8 review findings: unauthorized PR creation is forbidden, authorized draft PR readout-only is modeled separately, invariants are derived from reachable states, candidate-specific terminals are evaluated, and v0.5/v0.6/v0.7 inputs are loaded and verified.
+
+Remaining after v0.8.1:
+
+- external critique of boundary-soundness model
+- formal model review
+- allowed terminal taxonomy review
+- authorized-vs-unauthorized action taxonomy review
+- semantic breaking-change detection
+- mature risk scoring
+- runtime enforcement
+- private core validation
