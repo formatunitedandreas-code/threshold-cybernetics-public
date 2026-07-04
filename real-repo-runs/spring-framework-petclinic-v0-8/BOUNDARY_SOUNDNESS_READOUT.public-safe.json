@@ -1,0 +1,121 @@
+{
+  "soundness_readout_id": "petclinic_boundary_soundness_v0_8_0",
+  "mode": "readout_only_reachability_invariant_check",
+  "target_repo": "spring-petclinic/spring-framework-petclinic",
+  "target_commit": "bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a",
+  "input_chain": [
+    "v0.4.1_git_byte_hash_provenance",
+    "v0.5_risk_hint_gradation",
+    "v0.6_policy_mapping",
+    "v0.7_scoped_receipt_validation"
+  ],
+  "candidates": [
+    "DEP-001",
+    "CFG-001",
+    "JSP-001"
+  ],
+  "forbidden_markings_checked": [
+    "patch_authorized",
+    "execution_authorized",
+    "source_mutated",
+    "pr_created",
+    "merge_authorized",
+    "deployment_authorized",
+    "deployment_readiness_claimed",
+    "security_fix_claimed",
+    "product_readiness_claimed",
+    "compliance_certified",
+    "runtime_authority_granted"
+  ],
+  "candidate_results": [
+    {
+      "candidate_id": "DEP-001",
+      "reachable_states": [
+        "DEP-001:candidate_detected",
+        "DEP-001:evidence_hash_verified",
+        "DEP-001:receipt_scope_match_readout_only",
+        "DEP-001:risk_tier_medium",
+        "DEP-001:standard_human_review_required",
+        "readout_only_no_action",
+        "valid_scope_match_readout_only"
+      ],
+      "reachable_terminal_states": [
+        "readout_only_no_action",
+        "valid_scope_match_readout_only"
+      ],
+      "reachable_forbidden_markings": [],
+      "forbidden_authority_reachable": false
+    },
+    {
+      "candidate_id": "CFG-001",
+      "reachable_states": [
+        "CFG-001:candidate_detected",
+        "CFG-001:evidence_hash_verified",
+        "CFG-001:receipt_missing",
+        "CFG-001:risk_tier_medium",
+        "CFG-001:standard_human_review_required",
+        "stop_no_action"
+      ],
+      "reachable_terminal_states": [
+        "stop_no_action"
+      ],
+      "reachable_forbidden_markings": [],
+      "forbidden_authority_reachable": false
+    },
+    {
+      "candidate_id": "JSP-001",
+      "reachable_states": [
+        "JSP-001:candidate_detected",
+        "JSP-001:evidence_hash_verified",
+        "JSP-001:receipt_scope_mismatch_hold",
+        "JSP-001:risk_tier_high",
+        "JSP-001:strict_human_review_required",
+        "hold_for_manual_triage",
+        "hold_human_review_required"
+      ],
+      "reachable_terminal_states": [
+        "hold_for_manual_triage",
+        "hold_human_review_required"
+      ],
+      "reachable_forbidden_markings": [],
+      "forbidden_authority_reachable": false
+    }
+  ],
+  "authority_laundering_invariants": {
+    "candidate_to_execution_reachable": false,
+    "evidence_to_authority_reachable": false,
+    "risk_tier_to_approval_reachable": false,
+    "policy_lane_to_execution_permission_reachable": false,
+    "receipt_valid_to_action_allowed_reachable": false,
+    "test_pass_to_deployment_readiness_reachable": false
+  },
+  "evidence_provenance_invariants": {
+    "working_tree_hash_as_public_provenance_reachable": false,
+    "git_object_byte_hash_required": true,
+    "evidence_bound_without_hash_policy_reachable": false,
+    "evidence_hash_verified_without_target_commit_reachable": false,
+    "hash_policy": "git_object_bytes_sha256"
+  },
+  "human_authorization_invariants": {
+    "missing_receipt_to_action_allowed_reachable": false,
+    "scope_mismatch_to_action_allowed_reachable": false,
+    "valid_scope_match_to_patch_authorized_reachable": false,
+    "valid_scope_match_to_execution_authorized_reachable": false,
+    "human_review_required_to_approval_granted_reachable": false
+  },
+  "claim_boundary_invariants": {
+    "test_pass_to_deployment_readiness_reachable": false,
+    "candidate_to_security_fix_claim_reachable": false,
+    "evidence_to_compliance_certification_reachable": false,
+    "policy_lane_to_product_readiness_reachable": false
+  },
+  "soundness_status": "pass_bounded_public_reachability_scope",
+  "non_claims": {
+    "bpmn_engine": false,
+    "dmn_engine": false,
+    "runtime_enforcement": false,
+    "compliance_proof": false,
+    "deployment_readiness": false,
+    "autonomous_refactoring": false
+  }
+}

@@ -1,0 +1,23 @@
+name: Boundary-Soundness Reachability Harness
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  boundary-soundness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install boundary soundness harness
+        working-directory: boundary-soundness
+        run: npm ci
+
+      - name: Test boundary soundness harness
+        working-directory: boundary-soundness
+        run: npm test
+
+      - name: Produce boundary soundness readout
+        working-directory: boundary-soundness
+        run: npm run produce-boundary-soundness-readout -- --out ../real-repo-runs/spring-framework-petclinic-v0-8/BOUNDARY_SOUNDNESS_READOUT.ci.public-safe.json --matrix-out ../real-repo-runs/spring-framework-petclinic-v0-8/FORBIDDEN_MARKING_MATRIX.ci.public-safe.json --trace-out ../real-repo-runs/spring-framework-petclinic-v0-8/REACHABILITY_TRACE_SUMMARY.ci.public-safe.json

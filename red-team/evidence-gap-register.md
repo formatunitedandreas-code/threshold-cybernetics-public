@@ -73,4 +73,24 @@ Remaining after v0.7:
 - external independent review beyond reproducibility checks
 - private core validation
 
+v0.8 addresses the question of whether forbidden authority promotions are reachable across the bounded public PetClinic governance path by adding a readout-only Boundary-Soundness reachability harness.
+
+Remaining after v0.8:
+
+- formal verification beyond the bounded public graph
+- BPMN/DMN engine integration
+- runtime enforcement
+- real human authorization workflow
+- cryptographic receipt signatures
+- authorization expiry validation
+- authorization revocation
+- authorization audit trail
+- actual patch branch proposal after scoped validation
+- semantic breaking-change detection
+- mature risk scoring
+- enterprise-scale validation
+- real OpenRewrite integration
+- external independent review beyond reproducibility checks
+- private core validation
+
 These gaps are not failures of the harness. They are explicit boundaries for future evidence work.

@@ -161,3 +161,33 @@ Example outcomes:
 - Human Review Required != Approval Granted
 
 This release does not authorize patches, PRs, merge, deployment, security remediation, production use, or runtime action.
+
+## v0.8.0 - Boundary-Soundness Reachability Readout
+
+v0.8.0 adds a bounded public Boundary-Soundness readout.
+
+It models the public PetClinic governance path:
+
+```text
+Candidate -> Evidence -> Risk -> Policy -> Receipt -> Stop / Hold / Readout
+```
+
+Then it checks whether forbidden authority promotions are reachable:
+
+- patch authorization
+- execution authorization
+- PR creation
+- merge authorization
+- deployment authorization
+- security-fix claims
+- product-readiness claims
+- runtime authority
+
+The result is a public-safe reachability readout, not runtime enforcement.
+
+- Boundary Soundness != BPMN engine soundness
+- Boundary Soundness != DMN compliance
+- Boundary Soundness != formal verification of all workflows
+- Boundary Soundness != compliance proof
+- Boundary Soundness != deployment readiness
+- Boundary Soundness != autonomous refactoring

@@ -1,0 +1,17 @@
+{
+  "soundness_status": "pass_bounded_public_reachability_scope",
+  "candidate_results": {
+    "DEP-001": {
+      "forbidden_authority_reachable": false
+    },
+    "CFG-001": {
+      "forbidden_authority_reachable": false,
+      "receipt_missing_to_action_allowed_reachable": false
+    },
+    "JSP-001": {
+      "forbidden_authority_reachable": false,
+      "scope_mismatch_to_action_allowed_reachable": false,
+      "risk_tier_high_to_execution_permission_reachable": false
+    }
+  }
+}

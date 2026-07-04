@@ -1,0 +1,56 @@
+{
+  "candidate_results": [
+    {
+      "candidate_id": "DEP-001",
+      "reachable_states": [
+        "DEP-001:candidate_detected",
+        "DEP-001:evidence_hash_verified",
+        "DEP-001:receipt_scope_match_readout_only",
+        "DEP-001:risk_tier_medium",
+        "DEP-001:standard_human_review_required",
+        "readout_only_no_action",
+        "valid_scope_match_readout_only"
+      ],
+      "reachable_terminal_states": [
+        "readout_only_no_action",
+        "valid_scope_match_readout_only"
+      ],
+      "reachable_forbidden_markings": [],
+      "forbidden_authority_reachable": false
+    },
+    {
+      "candidate_id": "CFG-001",
+      "reachable_states": [
+        "CFG-001:candidate_detected",
+        "CFG-001:evidence_hash_verified",
+        "CFG-001:receipt_missing",
+        "CFG-001:risk_tier_medium",
+        "CFG-001:standard_human_review_required",
+        "stop_no_action"
+      ],
+      "reachable_terminal_states": [
+        "stop_no_action"
+      ],
+      "reachable_forbidden_markings": [],
+      "forbidden_authority_reachable": false
+    },
+    {
+      "candidate_id": "JSP-001",
+      "reachable_states": [
+        "JSP-001:candidate_detected",
+        "JSP-001:evidence_hash_verified",
+        "JSP-001:receipt_scope_mismatch_hold",
+        "JSP-001:risk_tier_high",
+        "JSP-001:strict_human_review_required",
+        "hold_for_manual_triage",
+        "hold_human_review_required"
+      ],
+      "reachable_terminal_states": [
+        "hold_for_manual_triage",
+        "hold_human_review_required"
+      ],
+      "reachable_forbidden_markings": [],
+      "forbidden_authority_reachable": false
+    }
+  ]
+}

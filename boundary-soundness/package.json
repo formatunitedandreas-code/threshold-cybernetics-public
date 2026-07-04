@@ -1,0 +1,15 @@
+{
+  "name": "@threshold-cybernetics/public-boundary-soundness-harness",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "produce-boundary-soundness-readout": "tsx scripts/produce-boundary-soundness-readout.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

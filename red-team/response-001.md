@@ -24,4 +24,6 @@ v0.6 addresses the question of how bounded risk tiers translate into review requ
 
 v0.7 addresses the question of how policy-lane requirements can be checked against scoped human authorization receipts by adding a non-authorizing synthetic receipt validation harness.
 
+v0.8 addresses the question of whether forbidden authority promotions are reachable across the bounded public PetClinic governance path by adding a readout-only Boundary-Soundness reachability harness.
+
 The response is intentionally bounded: public evidence improves reproducibility, but it does not establish enterprise validation, full toolchain integration, security remediation, compliance certification, deployment readiness, autonomous refactoring capability, or runtime authority.

@@ -1,0 +1,16 @@
+{
+  "rule_set_id": "forbidden_authority_markings_v0_1",
+  "forbidden_authority_markings": [
+    "patch_authorized",
+    "execution_authorized",
+    "source_mutated",
+    "pr_created",
+    "merge_authorized",
+    "deployment_authorized",
+    "deployment_readiness_claimed",
+    "security_fix_claimed",
+    "product_readiness_claimed",
+    "compliance_certified",
+    "runtime_authority_granted"
+  ]
+}

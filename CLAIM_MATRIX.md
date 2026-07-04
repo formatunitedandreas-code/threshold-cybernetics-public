@@ -38,6 +38,9 @@ runtime_authority_claimed: false
 - v0.7.0 validates synthetic human authorization receipt scope against required policy-lane scope.
 - v0.7.0 distinguishes valid scope match, missing receipt, scope mismatch, and invalid target.
 - v0.7.0 keeps receipt validation non-authorizing.
+- v0.8.0 checks bounded Boundary-Soundness reachability over the public PetClinic governance path.
+- v0.8.0 verifies that forbidden authority markings are unreachable in the modeled public graph.
+- v0.8.0 remains readout-only and non-authorizing.
 - Open-source Spring Framework PetClinic-style demo scope.
 - Governed refactoring readiness as review/process readiness.
 - Controlled non-execution and Stop/No-Action as intended governance behavior.
@@ -81,6 +84,12 @@ runtime_authority_claimed: false
 - Threshold automatically opens PRs after receipt validation.
 - Threshold executes changes after receipt validation.
 - Threshold grants deployment approval.
+- Threshold formally proves all workflows sound.
+- Threshold is a BPMN engine.
+- Threshold is a DMN engine.
+- Threshold enforces runtime safety.
+- Threshold proves compliance.
+- Threshold guarantees safe refactoring.
 - Threshold is production-ready.
 - Threshold performs security remediation.
 - Threshold is deployment-ready.
@@ -113,3 +122,8 @@ runtime_authority_claimed: false
 - Receipt Valid != Action Allowed
 - Receipt Scope Match != Runtime Authority
 - Human Authorization Receipt != Product Readiness
+- Boundary Soundness != BPMN Engine Soundness
+- Boundary Soundness != DMN Compliance
+- Boundary Soundness != Runtime Enforcement
+- Boundary Soundness != Compliance Proof
+- Forbidden Marking Unreachable != Action Authority
