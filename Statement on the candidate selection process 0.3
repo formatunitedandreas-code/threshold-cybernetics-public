@@ -1,0 +1,9 @@
+The v0.3 result materially improves the evidence level of the project.
+
+The earlier criticism was correct: v0.2 demonstrated a reproducible authorization gate, but candidates were still essentially pre-labeled fixtures. In v0.3, that is no longer the whole story. The public harness now includes a minimal candidate-detection path that reads fixture file contents, derives candidate classes from visible surfaces, and binds evidence to SHA-256 hashes.
+
+An external test with a newly created fixture confirmed the intended behavior: a synthetic `pom.xml` triggered the dependency/plugin candidate, a synthetic Spring XML surface triggered the configuration candidate, and the absence of JSP files correctly prevented the JSP/MVC candidate from being produced.
+
+That does not prove semantic risk analysis, enterprise-scale candidate detection, or mature breaking-change detection. It does prove something narrower and useful: candidate detection is no longer just prose or hardcoded labels. It is a small, reproducible, content-based harness with verifiable evidence binding.
+
+The next evidence step is clear: run the candidate-detection harness against the real open-source `spring-framework-petclinic` repository in read-only mode, publish the bounded candidate/evidence summary, and explicitly document false positives, noise, and remaining risk-scoring limitations.
