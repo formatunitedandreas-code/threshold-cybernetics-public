@@ -1,5 +1,11 @@
 # Response 001
 
+## External critique invitation response
+
+The external critique pack explicitly requests adversarial tests and documents the current self-governance enforcement maturity.
+
+It states that Release Action Receipt Validator v0.1 exists, but is not yet a mandatory git wrapper, gh wrapper, pre-commit hook, pre-push hook, release hook, or Codex runtime tool interception layer.
+
 v0.2.0 does not publish the private core.
 
 v0.2.0 adds a minimal public harness.

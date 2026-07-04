@@ -1,5 +1,13 @@
 # Evidence Gap Register
 
+## External critique invitation gaps
+
+- Independent external critique has been invited but not completed.
+- Release Action Receipt Validator v0.1 is available but not mandatory for git/gh execution.
+- Mandatory staged-file allowlist validation is not yet built.
+- Mandatory claim-scan validation is not yet built.
+- Codex runtime tool enforcement by Threshold policy remains unobserved.
+
 Open gaps:
 
 - external independent review

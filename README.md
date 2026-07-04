@@ -29,6 +29,18 @@ It does not claim autonomous refactoring, production readiness, deployment readi
 
 This public mirror contains only bounded public-safe summary material. It does not contain private source code, PetClinic source code, raw logs, scanner reports, private benchmark outputs, or runtime artifacts.
 
+## External Critique Invitation
+
+This project invites technical critique of the public Boundary Soundness and Self-Governance evidence chain.
+
+Please see:
+
+- `external-critique/REVIEWER_BRIEF.md`
+- `external-critique/REVIEW_CHECKLIST.md`
+- `external-critique/SELF_GOVERNANCE_STATUS.md`
+
+This is an invitation for critique, not a certification claim.
+
 ## Public Evidence Harness
 
 v0.2.0 adds a minimal reproducible public harness.

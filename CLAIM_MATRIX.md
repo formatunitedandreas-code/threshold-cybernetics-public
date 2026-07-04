@@ -41,6 +41,8 @@ runtime_authority_claimed: false
 - v0.8.0 checks bounded Boundary-Soundness reachability over the public PetClinic governance path.
 - v0.8.0 verifies that forbidden authority markings are unreachable in the modeled public graph.
 - v0.8.0 remains readout-only and non-authorizing.
+- The project invites external critique of its public boundary-soundness and self-governance chain.
+- The Release Action Receipt Validator exists but is not mandatory enforcement.
 - Open-source Spring Framework PetClinic-style demo scope.
 - Governed refactoring readiness as review/process readiness.
 - Controlled non-execution and Stop/No-Action as intended governance behavior.
@@ -93,6 +95,10 @@ runtime_authority_claimed: false
 - Threshold is production-ready.
 - Threshold performs security remediation.
 - Threshold is deployment-ready.
+- External critique completed.
+- Peer review passed.
+- Codex is fully guarded.
+- Threshold runtime-enforces all Codex actions.
 
 ## Non-Claims
 
@@ -118,6 +124,11 @@ runtime_authority_claimed: false
 - Policy Mapping != Patch Approval
 - Policy Mapping != Execution Permission
 - Policy Mapping != PR Creation
+- External Critique Invitation != Certification
+- External Critique Invitation != Peer Review Completed
+- Release Action Receipt Validator != Mandatory Git Wrapper
+- Release Action Receipt Validator != Mandatory GH Wrapper
+- Validator Available != Runtime Enforcement
 - Receipt Validation != Patch Execution
 - Receipt Valid != Action Allowed
 - Receipt Scope Match != Runtime Authority

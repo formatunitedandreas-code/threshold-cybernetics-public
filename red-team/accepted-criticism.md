@@ -1,5 +1,11 @@
 # Accepted Criticism
 
+## External critique and self-governance maturity
+
+- External reviewers should test whether recent fixes address general error classes or only known fixtures.
+- The release-action receipt validator is available but not mandatory.
+- Codex runtime tool enforcement by Threshold remains unobserved.
+
 - Public material did not yet include reproducible code.
 - Receipts were described but not visible.
 - No third-party verification exists.
