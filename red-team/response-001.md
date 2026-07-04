@@ -14,4 +14,6 @@ v0.3.0 addresses the criticism that candidates were previously labels only by ad
 
 v0.4.0 addresses the criticism that candidate detection had only been tested on synthetic fixtures by adding a read-only run against a real open-source repository checkout.
 
+v0.4.1 repairs the v0.4.0 hash provenance issue by using Git-object-byte hashing and CI verification.
+
 The response is intentionally bounded: public evidence improves reproducibility, but it does not establish enterprise validation, full toolchain integration, security remediation, compliance certification, deployment readiness, autonomous refactoring capability, or runtime authority.

@@ -1,0 +1,207 @@
+{
+  "hash_policy": "git_object_bytes_sha256",
+  "target_repo": "spring-petclinic/spring-framework-petclinic",
+  "target_commit": "bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a",
+  "evidence_items": [
+    {
+      "path": "pom.xml",
+      "file_type": "maven_pom",
+      "sha256": "2b9b53c2973a00b0f5dc73bdd0b893735c381a116043360248b5ebdec20bf736",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "DEP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/CrashController.java",
+      "file_type": "java_controller",
+      "sha256": "1a297e09f162ac5917ab8bc1bbba50b0bd4702d16a02229874a29d384eae7173",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/OwnerController.java",
+      "file_type": "java_controller",
+      "sha256": "4ed4411a2c412113d59067ff4be4c05bb26050fc6e23b606a6e6d6924b48489b",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/PetController.java",
+      "file_type": "java_controller",
+      "sha256": "b3a2f5bc78c9671b617dc582fa9c3493ad487d384ec43b4e570810c78ee53e4d",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/VetController.java",
+      "file_type": "java_controller",
+      "sha256": "bbd51d87b798ae509b15b52c17755272b262ad79363eee408644df86e60ef1fd",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/VisitController.java",
+      "file_type": "java_controller",
+      "sha256": "c4879b7799498f2f9dbc21b763d04e341db6b6d8f028a1f77537552b068e3bb5",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/business-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "9e254940c69875037649cba2cdb6d15b58aaed79299f13556678612a0873647a",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/datasource-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "e58ef4ee625c8985dbf02f3d503099e4e56d002351ab089cec50ad462ef6f23f",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/mvc-core-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "accffff5ff7471ce5f9531be187d05aedd8e278138fdf25e17f38ac19bc59f73",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/mvc-view-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "1af9dbedb545451398b4742e9166336551816a86a5ae85091fcd0f81a93e8b63",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/tools-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "f6f7a70edbd8091e9a06e65d835295fbb179be940733a15adc515c8aba7b30cb",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/exception.jsp",
+      "file_type": "jsp",
+      "sha256": "950074edd1d9a7fd2034acfd5b9e72fd486c925be32c63c08f171c9ff97244b5",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/createOrUpdateOwnerForm.jsp",
+      "file_type": "jsp",
+      "sha256": "5cf9ea45bc45beb183d139a670e2ac51f1b53d5cedd2bb92ad2064be1d48fa66",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/findOwners.jsp",
+      "file_type": "jsp",
+      "sha256": "6729cc4626d3ee4fe7fe745f0692fcad16afeb932d521f8935556cbbc3d1a23b",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/ownerDetails.jsp",
+      "file_type": "jsp",
+      "sha256": "9611754d56dc9baa6b467a7fda38142f1eac0243b533739ef94e32e2157e1169",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/ownersList.jsp",
+      "file_type": "jsp",
+      "sha256": "56f3aaca45e6809ddd20b2e8ddd43bec67c1a68030f6003ed433fe305850ee11",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/pets/createOrUpdatePetForm.jsp",
+      "file_type": "jsp",
+      "sha256": "eab62273646ebcc16b5b3aac467ed68ead99e9eb62e3d4a8d2dbf449587d5243",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/pets/createOrUpdateVisitForm.jsp",
+      "file_type": "jsp",
+      "sha256": "fb14844923a28e943c884592023f1b0bf20a878d4730585f99500699deec830d",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/vets/vetList.jsp",
+      "file_type": "jsp",
+      "sha256": "fd29c44b22d9fef09943ccb060fe243f50836b43f74e4bc963017f9346664e1a",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/welcome.jsp",
+      "file_type": "jsp",
+      "sha256": "b30ebe6cb9f1c43b0faff54b60325f07e9e344cc990678d0a925440ee970f7cd",
+      "hash_command_equivalent": "git show <target_commit>:<path> | sha256sum",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    }
+  ]
+}

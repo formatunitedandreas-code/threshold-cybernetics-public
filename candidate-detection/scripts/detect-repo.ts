@@ -29,6 +29,9 @@ function parseArgs(argv: string[]): Args {
     } else if (key === "--target-commit") {
       args.targetCommit = value;
       index += 1;
+    } else if (key === "--commit") {
+      args.targetCommit = value;
+      index += 1;
     }
   }
 
@@ -112,7 +115,7 @@ function evidenceIndex(candidates: DetectedCandidate[], targetCommit: string): o
 const args = parseArgs(process.argv.slice(2));
 
 if (!args.repo || !args.caseName) {
-  throw new Error("Usage: npm run detect -- --repo <external_repo_path> --case <case_name> [--out-dir <dir>] [--target-commit <sha>]");
+  throw new Error("Usage: npm run detect -- --repo <external_repo_path> --case <case_name> [--out-dir <dir>] [--commit <sha>]");
 }
 
 if (!existsSync(args.repo)) {

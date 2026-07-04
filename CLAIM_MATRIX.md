@@ -25,6 +25,10 @@ runtime_authority_claimed: false
 - The run published bounded candidate summaries using paths, hashes and aggregate evidence categories.
 - The target repository was not mutated.
 - PetClinic source code was not copied into the public Threshold repository.
+- v0.4.1 publishes Git-object-byte SHA-256 hashes for the v0.4 real-repo evidence items.
+- v0.4.1 includes a public hash verification script.
+- v0.4.1 supersedes v0.4.0 for evidence hash provenance.
+- v0.4.0 candidate path detection remains reproducible.
 - Open-source Spring Framework PetClinic-style demo scope.
 - Governed refactoring readiness as review/process readiness.
 - Controlled non-execution and Stop/No-Action as intended governance behavior.
@@ -54,6 +58,10 @@ runtime_authority_claimed: false
 - Threshold detects all real refactoring risks.
 - Threshold is deployment-ready.
 - Threshold performs security remediation.
+- v0.4.1 proves semantic risk analysis.
+- v0.4.1 proves mature risk scoring.
+- v0.4.1 proves product readiness.
+- v0.4.1 proves security remediation.
 
 ## Non-Claims
 
@@ -69,3 +77,7 @@ runtime_authority_claimed: false
 - Path/Hash Evidence != Source Code Publication
 - Candidate Detection != Patch Approval
 - Real Repo Run != Enterprise Validation
+- Hash Provenance Repair != New Candidate Detection Claim
+- Hash Fix != Semantic Validation
+- Hash Match != Evidence Sufficiency
+- Git Byte Hash != Security Audit

@@ -85,3 +85,19 @@ It does not copy or publish PetClinic source files, private core code, private l
 This run demonstrates that the public candidate-detection harness can operate on a real open-source repository checkout without mutating the target repo.
 
 It does not claim semantic breaking-change detection, mature risk scoring, enterprise-grade detection, product readiness, deployment readiness, security remediation, autonomous refactoring, compliance certification, or runtime authority.
+
+## v0.4.1 - Hash Provenance Repair
+
+v0.4.1 repairs the evidence hash provenance of the v0.4.0 open-source repository run.
+
+An external verification found that the v0.4.0 candidate detection run was reproducible, but 19 of 20 published SHA-256 hashes were not reproducible against the public Git source bytes because the hashes were generated over a line-ending-normalized representation.
+
+v0.4.1 corrects this by publishing Git-object-byte SHA-256 hashes and adding a verification script/CI workflow that recomputes hashes via:
+
+```bash
+git show <target_commit>:<path> | sha256sum
+```
+
+v0.4.0 remains useful for candidate path detection but is superseded for hash provenance by v0.4.1.
+
+This release does not publish PetClinic source code, private core code, private logs, scanner reports, or raw traces.

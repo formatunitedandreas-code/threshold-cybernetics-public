@@ -1,0 +1,4 @@
+source_leakage_files_present: false
+sensitive_pattern_hits_present: false
+authority_leakage_scan: passed; hits are negative Boundary/Non-Claim/Forbidden-Overclaim/Evidence-Gap contexts
+claim_scan_hit_count_recorded: 33

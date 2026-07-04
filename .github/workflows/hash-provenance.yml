@@ -1,0 +1,35 @@
+name: Hash Provenance Verification
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify-hashes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout target repository
+        run: |
+          mkdir -p external-fixtures
+          git clone https://github.com/spring-petclinic/spring-framework-petclinic.git external-fixtures/spring-framework-petclinic
+          cd external-fixtures/spring-framework-petclinic
+          git checkout bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a
+          git status --porcelain=v1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install candidate detection harness
+        working-directory: candidate-detection
+        run: npm ci
+
+      - name: Test candidate detection harness
+        working-directory: candidate-detection
+        run: npm test
+
+      - name: Verify real repo hashes against Git object bytes
+        working-directory: candidate-detection
+        run: npm run verify-real-repo-hashes -- --repo ../external-fixtures/spring-framework-petclinic --commit bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a --index ../real-repo-runs/spring-framework-petclinic-v0-4-1/evidence-index.git-byte-hashes.public-safe.json
