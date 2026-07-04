@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
+    "detect": "tsx scripts/detect-repo.ts",
     "produce-candidate-ledger": "tsx scripts/produce-candidate-ledger.ts"
   },
   "devDependencies": {

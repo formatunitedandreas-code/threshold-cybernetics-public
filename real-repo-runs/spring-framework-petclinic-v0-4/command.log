@@ -1,0 +1,6 @@
+cd candidate-detection
+npm ci
+npm test
+npm run produce-candidate-ledger
+npm run detect -- --repo C:/dev/external-fixtures/spring-framework-petclinic --case spring-framework-petclinic --out-dir ../real-repo-runs/spring-framework-petclinic-v0-4 --target-commit bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a
+bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a

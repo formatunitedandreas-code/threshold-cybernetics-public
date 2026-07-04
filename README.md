@@ -65,3 +65,23 @@ npm run produce-candidate-ledger
 ```
 
 This does not publish the private core and does not claim enterprise-grade risk scoring, semantic breaking-change detection, product readiness, deployment readiness, security remediation, autonomous refactoring, compliance certification, or runtime authority.
+
+## v0.4.0 - Open-Source Repo Candidate Detection Run
+
+v0.4.0 adds a bounded read-only candidate-detection run against the real open-source `spring-framework-petclinic` repository.
+
+The run publishes only public-safe summaries:
+
+- target commit
+- detected candidate classes
+- evidence paths
+- SHA-256 evidence hashes
+- aggregate counts
+- false-positive/noise notes
+- non-claims
+
+It does not copy or publish PetClinic source files, private core code, private logs, scanner reports, or raw traces.
+
+This run demonstrates that the public candidate-detection harness can operate on a real open-source repository checkout without mutating the target repo.
+
+It does not claim semantic breaking-change detection, mature risk scoring, enterprise-grade detection, product readiness, deployment readiness, security remediation, autonomous refactoring, compliance certification, or runtime authority.

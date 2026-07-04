@@ -1,0 +1,89 @@
+{
+  "target_repo": "spring-petclinic/spring-framework-petclinic",
+  "target_commit": "bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a",
+  "detected_candidates": [
+    {
+      "candidate_id": "DEP-001",
+      "candidate_type": "dependency_plugin_review_candidate",
+      "detected": true,
+      "evidence_paths": [
+        "pom.xml"
+      ],
+      "evidence_hashes_present": true,
+      "risk_hints": [
+        "dependency_version_surface",
+        "plugin_version_surface",
+        "transitive_dependency_possible"
+      ],
+      "non_claims": [
+        "candidate detection is not patch approval",
+        "candidate detection is not security fix",
+        "candidate detection is not deployment readiness"
+      ]
+    },
+    {
+      "candidate_id": "CFG-001",
+      "candidate_type": "spring_config_inventory_candidate",
+      "detected": true,
+      "evidence_paths": [
+        "src/main/resources/spring/business-config.xml",
+        "src/main/resources/spring/datasource-config.xml",
+        "src/main/resources/spring/mvc-core-config.xml",
+        "src/main/resources/spring/mvc-view-config.xml",
+        "src/main/resources/spring/tools-config.xml"
+      ],
+      "evidence_hashes_present": true,
+      "risk_hints": [
+        "configuration_behavior_surface",
+        "view_resolution_surface",
+        "migration_requires_human_review"
+      ],
+      "non_claims": [
+        "candidate detection is not patch approval",
+        "candidate detection is not security fix",
+        "candidate detection is not deployment readiness"
+      ]
+    },
+    {
+      "candidate_id": "JSP-001",
+      "candidate_type": "jsp_mvc_risk_candidate",
+      "detected": true,
+      "evidence_paths": [
+        "src/main/webapp/WEB-INF/jsp/exception.jsp",
+        "src/main/webapp/WEB-INF/jsp/owners/createOrUpdateOwnerForm.jsp",
+        "src/main/webapp/WEB-INF/jsp/owners/findOwners.jsp",
+        "src/main/webapp/WEB-INF/jsp/owners/ownerDetails.jsp",
+        "src/main/webapp/WEB-INF/jsp/owners/ownersList.jsp",
+        "src/main/webapp/WEB-INF/jsp/pets/createOrUpdatePetForm.jsp",
+        "src/main/webapp/WEB-INF/jsp/pets/createOrUpdateVisitForm.jsp",
+        "src/main/webapp/WEB-INF/jsp/vets/vetList.jsp",
+        "src/main/webapp/WEB-INF/jsp/welcome.jsp",
+        "src/main/java/org/springframework/samples/petclinic/web/CrashController.java",
+        "src/main/java/org/springframework/samples/petclinic/web/OwnerController.java",
+        "src/main/java/org/springframework/samples/petclinic/web/PetController.java",
+        "src/main/java/org/springframework/samples/petclinic/web/VetController.java",
+        "src/main/java/org/springframework/samples/petclinic/web/VisitController.java"
+      ],
+      "evidence_hashes_present": true,
+      "risk_hints": [
+        "form_binding_surface",
+        "routing_surface",
+        "view_rendering_surface",
+        "ui_behavior_requires_human_review"
+      ],
+      "non_claims": [
+        "candidate detection is not patch approval",
+        "candidate detection is not security fix",
+        "candidate detection is not deployment readiness"
+      ]
+    }
+  ],
+  "aggregate_counts": {
+    "candidate_count": 3,
+    "evidence_item_count": 20
+  },
+  "run_input_path_recorded_as": "../../external-fixtures/spring-framework-petclinic",
+  "patches_created": 0,
+  "prs_created": 0,
+  "source_mutated": false
+}

@@ -12,4 +12,6 @@ v0.2.0 still does not claim product readiness.
 
 v0.3.0 addresses the criticism that candidates were previously labels only by adding a minimal public candidate-detection harness over synthetic open fixtures.
 
+v0.4.0 addresses the criticism that candidate detection had only been tested on synthetic fixtures by adding a read-only run against a real open-source repository checkout.
+
 The response is intentionally bounded: public evidence improves reproducibility, but it does not establish enterprise validation, full toolchain integration, security remediation, compliance certification, deployment readiness, autonomous refactoring capability, or runtime authority.

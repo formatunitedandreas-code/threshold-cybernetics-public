@@ -21,6 +21,10 @@ runtime_authority_claimed: false
 - Minimal public candidate-detection harness derives three candidate classes from synthetic fixture surfaces.
 - Candidate outputs are bound to public fixture file hashes.
 - Candidate Detection remains separate from patch approval.
+- The public candidate-detection harness was run read-only against the real open-source spring-framework-petclinic repository.
+- The run published bounded candidate summaries using paths, hashes and aggregate evidence categories.
+- The target repository was not mutated.
+- PetClinic source code was not copied into the public Threshold repository.
 - Open-source Spring Framework PetClinic-style demo scope.
 - Governed refactoring readiness as review/process readiness.
 - Controlled non-execution and Stop/No-Action as intended governance behavior.
@@ -46,6 +50,10 @@ runtime_authority_claimed: false
 - Threshold performs semantic breaking-change detection.
 - Threshold performs mature risk scoring.
 - Threshold is production-ready.
+- Threshold understands PetClinic semantically.
+- Threshold detects all real refactoring risks.
+- Threshold is deployment-ready.
+- Threshold performs security remediation.
 
 ## Non-Claims
 
@@ -57,3 +65,7 @@ runtime_authority_claimed: false
 - Public Release != Compliance Certification
 - Public Release != Runtime Authority
 - Stop/No-Action Receipt != Failure
+- Open-Source Repo Run != Source Vendoring
+- Path/Hash Evidence != Source Code Publication
+- Candidate Detection != Patch Approval
+- Real Repo Run != Enterprise Validation

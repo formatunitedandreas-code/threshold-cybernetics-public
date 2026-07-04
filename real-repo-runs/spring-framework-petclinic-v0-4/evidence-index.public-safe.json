@@ -1,0 +1,185 @@
+{
+  "target_commit": "bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a",
+  "evidence_items": [
+    {
+      "path": "pom.xml",
+      "file_type": "maven_pom",
+      "sha256": "f43c621b0c2921a8aaf8d09f498d21b4d82b660355c07f33e475bd46c2b43181",
+      "content_published": false,
+      "candidate_links": [
+        "DEP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/CrashController.java",
+      "file_type": "java_controller",
+      "sha256": "b3ba95550112c4f9d34f959ae51921045278b2fc76abf3b42d1b5ae971faf1bf",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/OwnerController.java",
+      "file_type": "java_controller",
+      "sha256": "e281dfa4df1dfe203d8d640160acc6f23063d3034d07bcd4af3300a531b325fe",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/PetController.java",
+      "file_type": "java_controller",
+      "sha256": "fad4e480e026e2e664357e989f38f49c81a90d408de4b8ac0b3b1537ad5738e7",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/VetController.java",
+      "file_type": "java_controller",
+      "sha256": "fd6ef1780e8dfe40fd1dbde54db8724274cd6377b3e1988c21573effb0befec9",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/java/org/springframework/samples/petclinic/web/VisitController.java",
+      "file_type": "java_controller",
+      "sha256": "d73f8612846db62d18336f4b633fb6547bd0f4240ef38d255a9f71696d1c9c95",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/business-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "757a216f4c716c78952a9987a66d878529d3b47eeb8d72d466a5ab6db01fb177",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/datasource-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "e58ef4ee625c8985dbf02f3d503099e4e56d002351ab089cec50ad462ef6f23f",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/mvc-core-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "37f6e350dd08bc67f22477b7dd6baa89710bafbf64741461396fa52587b96630",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/mvc-view-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "f5d8684220f6aa18465ce5b6ef619f688ab1074f9a4ee0e6b2b1b8c98e254c9a",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/resources/spring/tools-config.xml",
+      "file_type": "spring_xml",
+      "sha256": "aea521de0f922362c06555593fc0ae6ddcf246d10c624c91e23faf30a1534db9",
+      "content_published": false,
+      "candidate_links": [
+        "CFG-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/exception.jsp",
+      "file_type": "jsp",
+      "sha256": "ef8e373a2653314d867a58c90e62c715093993ca972c83f535a6045ac1e0730f",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/createOrUpdateOwnerForm.jsp",
+      "file_type": "jsp",
+      "sha256": "5d2e961250802c225b5cf402ff56c54840a8639d41fee9ed0eaf8b7c3398987e",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/findOwners.jsp",
+      "file_type": "jsp",
+      "sha256": "4091326577bf33c2e42855c87d8f6304ae97ac4e4c2cd59ebdd4c908274ed194",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/ownerDetails.jsp",
+      "file_type": "jsp",
+      "sha256": "85b45beb9d31d3654ee9b814957ab5a4f801e4e149a065c774bb40347b0c113b",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/owners/ownersList.jsp",
+      "file_type": "jsp",
+      "sha256": "df860cef39eba841405b68241fae168e86e4d76a91e61572f272333188ebebfa",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/pets/createOrUpdatePetForm.jsp",
+      "file_type": "jsp",
+      "sha256": "d2afd67b1076b3a7034ff976cadf6670590f7ea041a8c3968c9e76e887f05ed2",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/pets/createOrUpdateVisitForm.jsp",
+      "file_type": "jsp",
+      "sha256": "0f695fc02c54efa3eab91c58ca14b37e0eb7d70dd0a8ff2e1f390dc0ae93cc81",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/vets/vetList.jsp",
+      "file_type": "jsp",
+      "sha256": "a7aaaa2f5b5954501125f130c95e673fa843aa9159679edd0a6db70d53b714e6",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    },
+    {
+      "path": "src/main/webapp/WEB-INF/jsp/welcome.jsp",
+      "file_type": "jsp",
+      "sha256": "155bc2ce787a1be8429fe749af8db18152b54df3ad8d2d1709bf2d662e14ebfc",
+      "content_published": false,
+      "candidate_links": [
+        "JSP-001"
+      ]
+    }
+  ]
+}

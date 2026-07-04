@@ -18,3 +18,8 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run produce-candidate-ledger
+      - name: Run public-safe real repo detection
+        run: |
+          git clone --depth 1 https://github.com/spring-petclinic/spring-framework-petclinic.git "$RUNNER_TEMP/spring-framework-petclinic"
+          TARGET_COMMIT="$(git -C "$RUNNER_TEMP/spring-framework-petclinic" rev-parse HEAD)"
+          npm run detect -- --repo "$RUNNER_TEMP/spring-framework-petclinic" --case spring-framework-petclinic --out-dir "$RUNNER_TEMP/spring-framework-petclinic-v0-4" --target-commit "$TARGET_COMMIT"
