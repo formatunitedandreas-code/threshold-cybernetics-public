@@ -122,3 +122,23 @@ It takes the v0.4.1 Git-byte-verified candidate/evidence summaries and assigns n
 This is not mature risk scoring and not semantic breaking-change detection.
 
 Risk tiers do not authorize patches, PRs, execution, deployment, security remediation, or production use.
+
+## v0.6.0 - Policy-as-Code Authorization Tier Mapping
+
+v0.6.0 adds a bounded public policy-as-code mapping layer.
+
+It maps non-authorizing risk-hint tiers from v0.5 into required review lanes:
+
+- `medium` -> `standard_human_review_required`
+- `high` -> `strict_human_review_required`
+- `unknown` -> `hold_for_manual_triage`
+
+The mapping defines what kind of human review would be required before any action could even be considered.
+
+It does not grant authorization.
+
+- Policy Mapping != Authorization Granted
+- Policy Lane != Patch Approval
+- Policy Lane != Execution Permission
+- Risk Tier != Authority
+- Human Review Required != Approval Granted

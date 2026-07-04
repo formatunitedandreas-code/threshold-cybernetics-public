@@ -1,0 +1,20 @@
+{
+  "DEP-001": {
+    "risk_hint_tier": "medium",
+    "policy_lane": "standard_human_review_required",
+    "required_authorization_scope": "human_review_candidate_scope",
+    "action_allowed": false
+  },
+  "CFG-001": {
+    "risk_hint_tier": "medium",
+    "policy_lane": "standard_human_review_required",
+    "required_authorization_scope": "human_review_candidate_scope",
+    "action_allowed": false
+  },
+  "JSP-001": {
+    "risk_hint_tier": "high",
+    "policy_lane": "strict_human_review_required",
+    "required_authorization_scope": "strict_human_review_candidate_scope",
+    "action_allowed": false
+  }
+}

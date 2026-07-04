@@ -32,6 +32,9 @@ runtime_authority_claimed: false
 - v0.5.0 assigns bounded non-authorizing risk-hint tiers to public candidate summaries.
 - Risk hint tiers are review-priority categories only.
 - v0.5.0 uses v0.4.1 Git-byte-verified evidence as input.
+- v0.6.0 maps bounded risk-hint tiers to non-authorizing review lanes.
+- Policy lanes define required human review paths only.
+- Policy Mapping does not grant authorization.
 - Open-source Spring Framework PetClinic-style demo scope.
 - Governed refactoring readiness as review/process readiness.
 - Controlled non-execution and Stop/No-Action as intended governance behavior.
@@ -69,6 +72,8 @@ runtime_authority_claimed: false
 - Threshold performs semantic breaking-change detection.
 - Threshold detects all real refactoring risks.
 - Threshold authorizes patches based on risk tiers.
+- Threshold automatically opens PRs based on policy lanes.
+- Threshold authorizes patches based on policy lanes.
 - Threshold is production-ready.
 - Threshold performs security remediation.
 - Threshold is deployment-ready.
@@ -91,3 +96,9 @@ runtime_authority_claimed: false
 - Hash Fix != Semantic Validation
 - Hash Match != Evidence Sufficiency
 - Git Byte Hash != Security Audit
+- Risk Hint Gradation != Mature Risk Scoring
+- Risk Tier != Authority
+- Policy Mapping != Authorization Granted
+- Policy Mapping != Patch Approval
+- Policy Mapping != Execution Permission
+- Policy Mapping != PR Creation

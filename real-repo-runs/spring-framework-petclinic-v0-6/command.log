@@ -1,0 +1,13 @@
+Commands intended for this run:
+
+cd C:/dev/threshold-cybernetics-public/policy-mapping
+npm ci
+npm test
+npm run produce-policy-mapping -- --risk-gradation ../real-repo-runs/spring-framework-petclinic-v0-5/risk-gradation.public-safe.json --out ../real-repo-runs/spring-framework-petclinic-v0-6/policy-mapping.public-safe.json
+
+Observed status:
+
+- npm install: pass
+- npm ci: pass
+- npm test: pass
+- npm run produce-policy-mapping: pass

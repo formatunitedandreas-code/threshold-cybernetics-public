@@ -42,4 +42,18 @@ Remaining after v0.5:
 - external independent review beyond reproducibility checks
 - private core validation
 
+v0.6 addresses the question of how bounded risk tiers translate into review requirements by adding a non-authorizing policy-as-code mapping layer.
+
+Remaining after v0.6:
+
+- actual human authorization receipt validation
+- authorization scope matching
+- semantic breaking-change detection
+- mature risk scoring
+- false-positive reduction
+- enterprise-scale validation
+- real OpenRewrite integration
+- external independent review beyond reproducibility checks
+- private core validation
+
 These gaps are not failures of the harness. They are explicit boundaries for future evidence work.

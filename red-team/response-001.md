@@ -20,4 +20,6 @@ The v0.4.0 hash provenance RCA classifies the cause as confirmed line-ending nor
 
 v0.5 addresses the criticism that previous risk hints were static by adding bounded rule-based risk-hint tiers over Git-byte-verified candidate/evidence summaries.
 
+v0.6 addresses the question of how bounded risk tiers translate into review requirements by adding a non-authorizing policy-as-code mapping layer.
+
 The response is intentionally bounded: public evidence improves reproducibility, but it does not establish enterprise validation, full toolchain integration, security remediation, compliance certification, deployment readiness, autonomous refactoring capability, or runtime authority.

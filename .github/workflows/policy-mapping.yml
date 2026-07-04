@@ -1,0 +1,23 @@
+name: Policy Mapping Harness
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  policy-mapping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install policy mapping harness
+        working-directory: policy-mapping
+        run: npm ci
+
+      - name: Test policy mapping harness
+        working-directory: policy-mapping
+        run: npm test
+
+      - name: Produce policy mapping
+        working-directory: policy-mapping
+        run: npm run produce-policy-mapping -- --risk-gradation ../real-repo-runs/spring-framework-petclinic-v0-5/risk-gradation.public-safe.json --out ../real-repo-runs/spring-framework-petclinic-v0-6/policy-mapping.ci.public-safe.json

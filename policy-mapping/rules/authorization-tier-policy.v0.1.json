@@ -1,0 +1,42 @@
+{
+  "policy_set_id": "authorization_tier_policy_mapping_v0_1",
+  "policy_mode": "non_authorizing_review_requirement_mapping",
+  "non_claims": [
+    "Policy Mapping is not authorization granted",
+    "Policy Mapping is not patch approval",
+    "Policy Mapping is not execution permission",
+    "Policy Mapping is not PR creation",
+    "Policy Mapping is not merge approval",
+    "Policy Mapping is not deployment readiness",
+    "Policy Mapping is not security remediation"
+  ],
+  "risk_hint_tier_to_policy_lane": {
+    "inventory_only": "readout_only",
+    "low": "standard_human_review_required",
+    "medium": "standard_human_review_required",
+    "high": "strict_human_review_required",
+    "unknown": "hold_for_manual_triage"
+  },
+  "policy_lanes": {
+    "readout_only": {
+      "required_authorization_scope": "none",
+      "human_review_required": false,
+      "action_allowed": false
+    },
+    "standard_human_review_required": {
+      "required_authorization_scope": "human_review_candidate_scope",
+      "human_review_required": true,
+      "action_allowed": false
+    },
+    "strict_human_review_required": {
+      "required_authorization_scope": "strict_human_review_candidate_scope",
+      "human_review_required": true,
+      "action_allowed": false
+    },
+    "hold_for_manual_triage": {
+      "required_authorization_scope": "manual_triage_scope",
+      "human_review_required": true,
+      "action_allowed": false
+    }
+  }
+}

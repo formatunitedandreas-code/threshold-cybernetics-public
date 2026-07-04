@@ -1,0 +1,19 @@
+{
+  "run_id": "spring-framework-petclinic-policy-mapping-v0-6",
+  "release_target": "v0.6.0-policy-as-code-authorization-tier-mapping",
+  "public_repo": "formatunitedandreas-code/threshold-cybernetics-public",
+  "target_repo": "spring-petclinic/spring-framework-petclinic",
+  "target_commit": "bdbaa5e671dfd9acb5c5814f5ac6d2408107e39a",
+  "input_risk_gradation_release": "v0.5.0-risk-hint-gradation-harness",
+  "input_hash_policy": "git_object_bytes_sha256",
+  "policy_mapping_performed": true,
+  "policy_mode": "non_authorizing_review_requirement_mapping",
+  "authorization_granted": false,
+  "patches_created": 0,
+  "source_mutated": false,
+  "prs_created": 0,
+  "security_fix_claimed": false,
+  "deployment_readiness_claimed": false,
+  "product_readiness_claimed": false,
+  "runtime_authority_claimed": false
+}
