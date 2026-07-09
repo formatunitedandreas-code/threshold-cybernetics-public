@@ -1,0 +1,23 @@
+{
+  "plan_id": "public-v0-10-0-release-candidate-plan",
+  "release_tag": "v0.10.0-petclinic-owned-sandbox-baseline-readout",
+  "planned_actions": ["commit"],
+  "planned_file_paths": [
+    "README.md",
+    "RELEASE_NOTES_V0_10_0.md",
+    "public-release-candidates/v0.10.0/RELEASE_CANDIDATE.md",
+    "real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/README.md",
+    "real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/non-claims.md",
+    "real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/validator-readout.public-safe.json",
+    "self-governance-validator/fixtures/valid/v0.10.0-release-candidate.plan.public-safe.json",
+    "self-governance-validator/fixtures/valid/v0.10.0-release-candidate.receipt.public-safe.json"
+  ],
+  "planned_claims": {
+    "product_readiness_claimed": false,
+    "deployment_readiness_claimed": false,
+    "security_fix_claimed": false,
+    "autonomous_refactoring_claimed": false,
+    "compliance_certification_claimed": false,
+    "runtime_authority_claimed": false
+  }
+}

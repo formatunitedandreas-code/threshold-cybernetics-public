@@ -60,6 +60,16 @@ It validates:
 It does not install git/gh wrappers, hooks or runtime tool interception.
 It does not make the validator mandatory for Codex actions.
 
+## v0.10.0 Release Candidate - PetClinic Owned Sandbox Baseline Readout
+
+v0.10.0 is prepared as a release candidate only.
+
+It adds a public-safe readout candidate for the PetClinic owned-refactor Slice 01 local sandbox baseline. The candidate records only summary-level public information: local sandbox commit hashes, changed-file path summary, diff stat, aggregate test counts and explicit non-claims.
+
+It does not publish PetClinic source code, raw logs, private benchmark outputs, scanner reports or private repository contents.
+
+It does not create a tag, publish a GitHub Release, push to PetClinic, act on PR #281, claim autonomous refactoring, claim product readiness, claim deployment readiness, claim security remediation, claim compliance certification or claim runtime authority.
+
 ## Public Evidence Harness
 
 v0.2.0 adds a minimal reproducible public harness.
