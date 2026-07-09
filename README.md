@@ -70,6 +70,19 @@ It does not publish PetClinic source code, raw logs, private benchmark outputs, 
 
 It does not create a tag, publish a GitHub Release, push to PetClinic, act on PR #281, claim autonomous refactoring, claim product readiness, claim deployment readiness, claim security remediation, claim compliance certification or claim runtime authority.
 
+## PetClinic Boundary-Attestation Case
+
+This repository includes a public-safe Boundary-Attestation case for PetClinic PR #281 as a quiet reference case only. The case demonstrates Decision-before-action: source refs, authority flags, hashes and explicit non-claims are verified before any action could be considered.
+
+The case does not claim PetClinic was refactored, fixed, secured, approved, merged, deployed or maintainer-endorsed. It does not install hooks, mutate CI, enable branch protection, or activate blocking enforcement.
+
+Read:
+
+- `docs/PETCLINIC_BOUNDARY_CASE_PUBLIC_READOUT_V0_1.md`
+- `docs/PETCLINIC_BOUNDARY_ATTESTATION_VERIFICATION_GUIDE_V0_1.md`
+- `docs/PUBLIC_NON_CLAIMS_V0_1.md`
+- `artifacts/boundary-receipts/PETCLINIC_PR281_BOUNDARY_ATTESTATION_V0_1.json`
+
 ## Public Evidence Harness
 
 v0.2.0 adds a minimal reproducible public harness.

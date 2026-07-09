@@ -1,0 +1,106 @@
+{
+  "schema_version": "boundary_attestation_public_case_v0.1",
+  "case_id": "petclinic_pr281_boundary_attestation_v0_1",
+  "status": "public_safe_non_authorizing_readout",
+  "reference_case": {
+    "project": "Spring Framework PetClinic",
+    "reference": "PR #281",
+    "reference_mode": "quiet_reference_only",
+    "external_mutation_performed": false,
+    "pr_action_performed": false
+  },
+  "source_refs": [
+    "README.md#petclinic-boundary-attestation-case",
+    "real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/README.md",
+    "real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/non-claims.md",
+    "real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/validator-readout.public-safe.json",
+    "public-release-candidates/v0.10.0/RELEASE_CANDIDATE.md",
+    "RELEASE_NOTES_V0_10_0.md"
+  ],
+  "decision_before_action": {
+    "decision_recorded_before_external_action": true,
+    "external_action_authorized": false,
+    "result": "readout_only"
+  },
+  "boundary_chain_summary": [
+    {
+      "step": "candidate_or_case_identified",
+      "disposition": "public_safe_reference_only"
+    },
+    {
+      "step": "source_refs_bound",
+      "disposition": "hashable_public_artifact"
+    },
+    {
+      "step": "authority_flags_checked",
+      "disposition": "all_authorizing_flags_false"
+    },
+    {
+      "step": "non_claims_recorded",
+      "disposition": "explicit_non_claims_present"
+    }
+  ],
+  "authority_flags": {
+    "petclinic_refactored_claimed": false,
+    "petclinic_fixed_claimed": false,
+    "petclinic_secured_claimed": false,
+    "petclinic_upstream_mutation_authorized": false,
+    "petclinic_upstream_mutation_performed": false,
+    "pr281_action_authorized": false,
+    "pr281_action_performed": false,
+    "maintainer_endorsement_claimed": false,
+    "merge_authorized": false,
+    "merge_performed": false,
+    "deploy_authorized": false,
+    "deploy_performed": false,
+    "release_authorized": false,
+    "release_performed": false,
+    "runtime_authority_claimed": false,
+    "production_readiness_claimed": false,
+    "deployment_readiness_claimed": false,
+    "compliance_certification_claimed": false,
+    "security_fix_claimed": false,
+    "correctness_guarantee_claimed": false,
+    "public_safe_release_approval_claimed": false,
+    "active_blocking_enforcement_claimed": false,
+    "hook_installation_claimed": false,
+    "ci_enforcement_claimed": false,
+    "branch_protection_claimed": false
+  },
+  "verifiable_fields": [
+    "schema_version",
+    "case_id",
+    "status",
+    "source_refs",
+    "decision_before_action",
+    "authority_flags",
+    "non_claims",
+    "artifact_payload_sha256"
+  ],
+  "non_claims": [
+    "Boundary Attestation != PetClinic Refactor Success",
+    "Boundary Attestation != PetClinic Fix",
+    "Boundary Attestation != Security Fix",
+    "Boundary Attestation != Correctness Guarantee",
+    "Boundary Attestation != Compliance Certification",
+    "Boundary Attestation != Production Readiness",
+    "Boundary Attestation != Deployment Readiness",
+    "Boundary Attestation != Runtime Authority",
+    "Boundary Attestation != Maintainer Approval",
+    "Boundary Attestation != Merge Authorization",
+    "Boundary Attestation != PR Approval",
+    "Boundary Attestation != Public-Safe Release Approval",
+    "Boundary Attestation != Active Blocking Enforcement",
+    "Boundary Attestation != Hook Installation",
+    "Boundary Attestation != CI Enforcement",
+    "Boundary Attestation != Branch Protection",
+    "Quiet Reference Case != PR #281 Action",
+    "Public Readout != PetClinic Upstream Mutation"
+  ],
+  "signature_placeholder": {
+    "signature_present": false,
+    "signature_required_for_public_readout": false,
+    "placeholder_only": true
+  },
+  "artifact_payload_sha256": "f19e7bce9a04b657d95d208af5c65e16bea9f94c475eb29d3c88cfed8f36eb9e"
+}

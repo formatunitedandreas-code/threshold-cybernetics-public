@@ -1,0 +1,2 @@
+artifacts/boundary-receipts/*.json text eol=lf
+scripts/*.mjs text eol=lf
