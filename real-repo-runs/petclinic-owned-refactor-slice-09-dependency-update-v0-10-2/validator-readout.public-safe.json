@@ -1,0 +1,55 @@
+{
+  "valid": true,
+  "validation_result": "valid_scope_match_readout_only",
+  "readout_id": "petclinic-owned-refactor-slice-09-dependency-update-v0-10-2",
+  "public_safe": true,
+  "non_authorizing": true,
+  "owned_sandbox_branch": "threshold-governed-refactor-demo",
+  "local_baseline_before_slice09": "5d1b832fbcb974e07dcd01399d883b61342eba16",
+  "slice09": {
+    "summary_kind": "test_adjacent_dependency_property_update",
+    "dependency_candidate": "org.junit.jupiter:junit-jupiter-engine",
+    "property": "junit-jupiter.version",
+    "before": "6.1.0",
+    "after": "6.1.1",
+    "target_version_source_ref": "official_junit_github_release_junit_6_1_1_r6_1_1",
+    "target_tag_ref": "refs/tags/r6.1.1",
+    "target_tag_object": "b0c050328d16cb38015c8464435620612acec930",
+    "allowed_file": "pom.xml",
+    "allowed_mutation_kind": "single_test_dependency_property_update_only",
+    "mvn_test": {
+      "tests": 75,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "build_result": "BUILD SUCCESS"
+    },
+    "tracked_petclinic_diff_after_execution": [
+      "pom.xml"
+    ],
+    "ignored_generated_surface_after_execution": [
+      "target/"
+    ],
+    "local_petclinic_commit_performed_in_this_public_readout_scope": false,
+    "human_decision_selected_disposition": "local_sandbox_commit_allowed",
+    "human_decision_allowed_next_action": "commit_petclinic_owned_refactor_slice_09_locally_and_bind_new_sandbox_baseline_v0_1_or_stop_no_action"
+  },
+  "petclinic_upstream_mutation_performed": false,
+  "petclinic_push_performed": false,
+  "pr281_action_performed": false,
+  "maintainer_contact_performed": false,
+  "merge_performed": false,
+  "deploy_performed": false,
+  "release_performed": false,
+  "runtime_action_performed": false,
+  "slice10_execution_performed": false,
+  "production_readiness_claimed": false,
+  "deployment_readiness_claimed": false,
+  "security_fix_claimed": false,
+  "correctness_guarantee_claimed": false,
+  "compliance_certification_claimed": false,
+  "active_blocking_enforcement_claimed": false,
+  "hooks_installed": false,
+  "ci_enforcement_claimed": false,
+  "branch_protection_changed": false
+}

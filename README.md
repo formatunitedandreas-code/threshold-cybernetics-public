@@ -94,6 +94,31 @@ This update does not publish PetClinic source code, raw logs, private benchmark 
 
 It does not create a tag, publish a GitHub Release, push to PetClinic, act on PR #281, claim autonomous refactoring, claim browser verification, claim product readiness, claim deployment readiness, claim security remediation, claim compliance certification, claim maintainer approval, or claim runtime authority.
 
+## v0.10.2 - PetClinic Slice 09 Public-Safe Readout Update
+
+v0.10.2 adds a public-safe summary for a later owned-sandbox PetClinic dependency-property governance event.
+
+It records only summary-level evidence for Slice 09:
+
+- selected candidate: `org.junit.jupiter:junit-jupiter-engine`
+- bounded property update: `junit-jupiter.version` `6.1.0` to `6.1.1`
+- allowed file: `pom.xml`
+- full Maven test summary: 75 tests, 0 failures, 0 errors, 0 skipped
+- tracked PetClinic diff after execution: exactly `pom.xml`
+- ignored generated surface: `target/`
+- human decision selected a later local-sandbox commit path
+
+Read:
+
+- `real-repo-runs/petclinic-owned-refactor-slice-09-dependency-update-v0-10-2/README.md`
+- `real-repo-runs/petclinic-owned-refactor-slice-09-dependency-update-v0-10-2/non-claims.md`
+- `real-repo-runs/petclinic-owned-refactor-slice-09-dependency-update-v0-10-2/validator-readout.public-safe.json`
+- `real-repo-runs/petclinic-owned-refactor-slice-09-dependency-update-v0-10-2/SHA256SUMS.txt`
+- `RELEASE_NOTES_V0_10_2.md`
+
+This update does not publish PetClinic source code, raw logs, private benchmark outputs, scanner reports, private repository contents, runtime artifacts, browser traces, or dependency cache contents.
+
+It does not create a tag, publish a GitHub Release, push to PetClinic, act on PR #281, claim autonomous refactoring, claim product readiness, claim deployment readiness, claim security remediation, claim compliance certification, claim maintainer approval, public-safe approval, merge readiness, refactor completion, or runtime authority.
 ## PetClinic Boundary-Attestation Case
 
 This repository includes a public-safe Boundary-Attestation case for PetClinic PR #281 as a quiet reference case only. The case demonstrates Decision-before-action: source refs, authority flags, hashes and explicit non-claims are verified before any action could be considered.
