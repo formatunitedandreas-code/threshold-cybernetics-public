@@ -6,6 +6,13 @@ Status: public-safe verification guide, non-authorizing.
 
 `artifacts/boundary-receipts/PETCLINIC_PR281_BOUNDARY_ATTESTATION_V0_1.json`
 
+## Related Public-Safe PetClinic Readouts
+
+- Slice 01 local baseline readout: `real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/README.md`
+- Slice 04/05 checklist fixture readout: `real-repo-runs/petclinic-owned-refactor-slices-04-05-checklist-fixtures-v0-10-1/README.md`
+
+These related readouts are summary evidence only. They do not extend the authority of the boundary attestation artifact.
+
 ## Expected SHA-256
 
 Artifact file SHA-256:

@@ -1,0 +1,55 @@
+{
+  "valid": true,
+  "validation_result": "valid_scope_match_readout_only",
+  "readout_id": "petclinic-owned-refactor-slices-04-05-checklist-fixtures-v0-10-1",
+  "public_safe": true,
+  "non_authorizing": true,
+  "owned_sandbox_branch": "threshold-governed-refactor-demo",
+  "local_baseline": "5d1b832fbcb974e07dcd01399d883b61342eba16",
+  "slice04": {
+    "summary_kind": "baseline_build_test_fixture",
+    "mvn_test": {
+      "tests": 75,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "mvn_verify": {
+      "tests": 75,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tracked_petclinic_diff_after_execution": false,
+    "local_petclinic_commit_performed": false
+  },
+  "slice05": {
+    "summary_kind": "route_jsp_smoke_checklist_fixture",
+    "surface_presence_check": "all_listed_surface_classes_present",
+    "web_controller_tests": {
+      "tests": 25,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tracked_petclinic_diff_after_execution": false,
+    "local_petclinic_commit_performed": false,
+    "browser_verification_claimed": false
+  },
+  "petclinic_upstream_mutation_performed": false,
+  "pr281_action_performed": false,
+  "maintainer_contact_performed": false,
+  "merge_performed": false,
+  "deploy_performed": false,
+  "release_performed": false,
+  "runtime_action_performed": false,
+  "production_readiness_claimed": false,
+  "deployment_readiness_claimed": false,
+  "security_fix_claimed": false,
+  "correctness_guarantee_claimed": false,
+  "compliance_certification_claimed": false,
+  "active_blocking_enforcement_claimed": false,
+  "hooks_installed": false,
+  "ci_enforcement_claimed": false,
+  "branch_protection_changed": false
+}

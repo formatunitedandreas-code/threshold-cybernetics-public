@@ -61,8 +61,12 @@ This chain is verifiable as a public artifact chain. It does not enforce runtime
 - `real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/README.md`
 - `real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/non-claims.md`
 - `real-repo-runs/petclinic-owned-refactor-slice-01-local-baseline-v0-10-0/validator-readout.public-safe.json`
+- `real-repo-runs/petclinic-owned-refactor-slices-04-05-checklist-fixtures-v0-10-1/README.md`
+- `real-repo-runs/petclinic-owned-refactor-slices-04-05-checklist-fixtures-v0-10-1/non-claims.md`
+- `real-repo-runs/petclinic-owned-refactor-slices-04-05-checklist-fixtures-v0-10-1/validator-readout.public-safe.json`
 - `public-release-candidates/v0.10.0/RELEASE_CANDIDATE.md`
 - `RELEASE_NOTES_V0_10_0.md`
+- `RELEASE_NOTES_V0_10_1.md`
 
 ## Explicit Non-Claims
 
@@ -84,3 +88,5 @@ This chain is verifiable as a public artifact chain. It does not enforce runtime
 - Boundary Attestation != Branch Protection
 - Quiet Reference Case != PR #281 Action
 - Public Readout != PetClinic Upstream Mutation
+- Checklist Fixture != Browser Verification
+- Web Test Pass != Route Correctness

@@ -21,6 +21,8 @@ This public pack records the following non-claims for the PetClinic Boundary-Att
 - No PR #281 action.
 - No PetClinic refactor success claim.
 - No public-safe release approval.
+- No browser verification claim.
+- No route correctness claim.
 
 ## Boundary Form
 
@@ -30,3 +32,5 @@ This public pack records the following non-claims for the PetClinic Boundary-Att
 - Hash Match != Correctness Guarantee
 - Non-Claims Register != Compliance Certification
 - Quiet Reference Case != Maintainer Approval
+- Checklist Fixture != Browser Verification
+- Web Test Pass != Route Correctness

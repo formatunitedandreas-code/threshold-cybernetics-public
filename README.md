@@ -70,6 +70,30 @@ It does not publish PetClinic source code, raw logs, private benchmark outputs, 
 
 It does not create a tag, publish a GitHub Release, push to PetClinic, act on PR #281, claim autonomous refactoring, claim product readiness, claim deployment readiness, claim security remediation, claim compliance certification or claim runtime authority.
 
+## v0.10.1 - PetClinic Slice 04/05 Public-Safe Readout Update
+
+v0.10.1 adds a public-safe summary for later owned-sandbox PetClinic governance events.
+
+It records only summary-level evidence for Slice 04 and Slice 05:
+
+- Slice 04 baseline build/test fixture: `mvn test` and `mvn verify` each reported 75 tests, 0 failures, 0 errors, 0 skipped.
+- Slice 05 route/JSP smoke-checklist fixture: existing web-controller tests reported 25 tests, 0 failures, 0 errors, 0 skipped.
+- No tracked PetClinic diff remained after either fixture.
+- No PetClinic local commit was made for Slice 04 or Slice 05.
+- No browser verification was claimed.
+
+Read:
+
+- `real-repo-runs/petclinic-owned-refactor-slices-04-05-checklist-fixtures-v0-10-1/README.md`
+- `real-repo-runs/petclinic-owned-refactor-slices-04-05-checklist-fixtures-v0-10-1/non-claims.md`
+- `real-repo-runs/petclinic-owned-refactor-slices-04-05-checklist-fixtures-v0-10-1/validator-readout.public-safe.json`
+- `real-repo-runs/petclinic-owned-refactor-slices-04-05-checklist-fixtures-v0-10-1/SHA256SUMS.txt`
+- `RELEASE_NOTES_V0_10_1.md`
+
+This update does not publish PetClinic source code, raw logs, private benchmark outputs, scanner reports, private repository contents, runtime artifacts, or browser traces.
+
+It does not create a tag, publish a GitHub Release, push to PetClinic, act on PR #281, claim autonomous refactoring, claim browser verification, claim product readiness, claim deployment readiness, claim security remediation, claim compliance certification, claim maintainer approval, or claim runtime authority.
+
 ## PetClinic Boundary-Attestation Case
 
 This repository includes a public-safe Boundary-Attestation case for PetClinic PR #281 as a quiet reference case only. The case demonstrates Decision-before-action: source refs, authority flags, hashes and explicit non-claims are verified before any action could be considered.
