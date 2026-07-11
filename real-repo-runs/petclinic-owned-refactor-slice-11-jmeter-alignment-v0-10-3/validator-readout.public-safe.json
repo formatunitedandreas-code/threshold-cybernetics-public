@@ -1,0 +1,65 @@
+{
+  "valid": true,
+  "validation_result": "valid_scope_match_readout_only",
+  "readout_id": "petclinic-owned-refactor-slice-11-jmeter-alignment-v0-10-3",
+  "public_safe": true,
+  "non_authorizing": true,
+  "orchestration_policy_version": "risk_adaptive_atomic_v0_1",
+  "owned_sandbox_branch": "threshold-governed-refactor-demo",
+  "local_baseline_before_slice11": "eca96697facaf883e86ccbe2e0164bc8e23a6f17",
+  "slice11": {
+    "summary_kind": "jmeter_test_plan_alignment_patch",
+    "transition_a": {
+      "risk_class": "R0_READ_ONLY_LOCAL",
+      "artifact_mode": "combined",
+      "human_decision_required": false
+    },
+    "transition_b": {
+      "risk_class": "R2_REVERSIBLE_LOCAL_MUTATION",
+      "artifact_mode": "separated",
+      "human_decision_status": "accepted_scope_limited",
+      "tracked_file_changed": "src/test/jmeter/petclinic_test_plan.jmx",
+      "allowed_mutation_kind": "remove_one_unresolved_jmeter_jquery_webjar_request_and_paired_empty_hashtree"
+    },
+    "dependency_evidence_summary": {
+      "jquery_webjar_present_in_bound_dependency_list": false,
+      "jquery_webjar_present_in_bound_dependency_tree": false
+    },
+    "validation": {
+      "xml_parse_after_mutation": "passed",
+      "reference_absence_check": "passed",
+      "diff_surface": [
+        "src/test/jmeter/petclinic_test_plan.jmx"
+      ],
+      "untracked_files": [],
+      "offline_maven_test": {
+        "tests": 75,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "build_result": "BUILD SUCCESS"
+      }
+    },
+    "local_petclinic_commit_performed_in_this_public_readout_scope": false,
+    "selected_next_cursor": "human_decision_petclinic_owned_refactor_slice_11_jmeter_jquery_reference_removal_local_commit_v0_1_or_stop_no_action"
+  },
+  "petclinic_upstream_mutation_performed": false,
+  "petclinic_push_performed": false,
+  "pr281_action_performed": false,
+  "maintainer_contact_performed": false,
+  "merge_performed": false,
+  "deploy_performed": false,
+  "release_performed": false,
+  "runtime_action_performed": false,
+  "browser_execution_performed": false,
+  "http_request_performed": false,
+  "production_readiness_claimed": false,
+  "deployment_readiness_claimed": false,
+  "security_fix_claimed": false,
+  "correctness_guarantee_claimed": false,
+  "compliance_certification_claimed": false,
+  "active_blocking_enforcement_claimed": false,
+  "hooks_installed": false,
+  "ci_enforcement_claimed": false,
+  "branch_protection_changed": false
+}

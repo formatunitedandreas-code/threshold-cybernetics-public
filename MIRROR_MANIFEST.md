@@ -23,6 +23,11 @@ human_review_required_before_public_repo_creation: true
 
 - `README.md`
 - `RELEASE_NOTES_V0_1_0.md`
+- `RELEASE_NOTES_V0_10_3.md`
+- `real-repo-runs/petclinic-owned-refactor-slice-11-jmeter-alignment-v0-10-3/README.md`
+- `real-repo-runs/petclinic-owned-refactor-slice-11-jmeter-alignment-v0-10-3/non-claims.md`
+- `real-repo-runs/petclinic-owned-refactor-slice-11-jmeter-alignment-v0-10-3/validator-readout.public-safe.json`
+- `real-repo-runs/petclinic-owned-refactor-slice-11-jmeter-alignment-v0-10-3/SHA256SUMS.txt`
 - `CLAIM_MATRIX.md`
 - `PETCLINIC_DEMO_SUMMARY.md`
 - `MIRROR_MANIFEST.md`

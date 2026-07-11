@@ -119,6 +119,32 @@ Read:
 This update does not publish PetClinic source code, raw logs, private benchmark outputs, scanner reports, private repository contents, runtime artifacts, browser traces, or dependency cache contents.
 
 It does not create a tag, publish a GitHub Release, push to PetClinic, act on PR #281, claim autonomous refactoring, claim product readiness, claim deployment readiness, claim security remediation, claim compliance certification, claim maintainer approval, public-safe approval, merge readiness, refactor completion, or runtime authority.
+
+## v0.10.3 - PetClinic Slice 11 Public-Safe Readout Update
+
+v0.10.3 adds a public-safe summary for a later owned-sandbox PetClinic JMeter test-plan alignment event.
+
+It records only summary-level evidence for Slice 11:
+
+- risk-adaptive transition shape: R0 interpretation followed by separate R2 reversible local mutation
+- changed file path: `src/test/jmeter/petclinic_test_plan.jmx`
+- local validation summary: XML parse passed, reference absence check passed, exact diff surface passed
+- offline Maven test summary: 75 tests, 0 failures, 0 errors, 0 skipped
+- tracked PetClinic diff after execution: exactly `src/test/jmeter/petclinic_test_plan.jmx`
+- untracked PetClinic files after execution: none
+- local patch remains uncommitted pending a separate Human Decision
+
+Read:
+
+- `real-repo-runs/petclinic-owned-refactor-slice-11-jmeter-alignment-v0-10-3/README.md`
+- `real-repo-runs/petclinic-owned-refactor-slice-11-jmeter-alignment-v0-10-3/non-claims.md`
+- `real-repo-runs/petclinic-owned-refactor-slice-11-jmeter-alignment-v0-10-3/validator-readout.public-safe.json`
+- `real-repo-runs/petclinic-owned-refactor-slice-11-jmeter-alignment-v0-10-3/SHA256SUMS.txt`
+- `RELEASE_NOTES_V0_10_3.md`
+
+This update does not publish PetClinic source code, raw logs, private benchmark outputs, scanner reports, private repository contents, runtime artifacts, browser traces, raw diffs, or dependency cache contents.
+
+It does not create a tag, publish a GitHub Release, push to PetClinic, act on PR #281, claim autonomous refactoring, claim product readiness, claim deployment readiness, claim security remediation, claim compliance certification, claim maintainer approval, public-safe approval, merge readiness, browser correctness, route correctness, application correctness, universal JQuery absence, refactor completion, or runtime authority.
 ## PetClinic Boundary-Attestation Case
 
 This repository includes a public-safe Boundary-Attestation case for PetClinic PR #281 as a quiet reference case only. The case demonstrates Decision-before-action: source refs, authority flags, hashes and explicit non-claims are verified before any action could be considered.

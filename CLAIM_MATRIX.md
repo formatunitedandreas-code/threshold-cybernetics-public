@@ -50,6 +50,7 @@ runtime_authority_claimed: false
 - Governed refactoring readiness as review/process readiness.
 - Controlled non-execution and Stop/No-Action as intended governance behavior.
 - Human authorization gates before patch, PR, merge, release, or runtime action.
+- Public-safe Slice 11 readout may state that one owned-sandbox JMeter test-plan alignment patch exists locally and remains uncommitted pending separate Human Decision.
 
 ## Forbidden Overclaims
 
@@ -104,6 +105,7 @@ runtime_authority_claimed: false
 - Threshold runtime-enforces all Codex actions.
 - git/gh actions are mechanically blocked by Threshold.
 - The public validator authorizes commits, tags or releases.
+- No Slice 11 proof of browser correctness, route correctness, application correctness, universal JQuery absence, refactor completion, or deployment readiness.
 
 ## Non-Claims
 
@@ -146,6 +148,9 @@ runtime_authority_claimed: false
 - Boundary Soundness != Runtime Enforcement
 - Boundary Soundness != Compliance Proof
 - Forbidden Marking Unreachable != Action Authority
+- Local Sandbox Patch != PetClinic Upstream Mutation
+- Offline Maven Test Pass != Deployment Readiness
+- JMeter Test-Plan Alignment != Browser Correctness
 
 ## v0.8.1 - Boundary Soundness Correction Closeout
 
