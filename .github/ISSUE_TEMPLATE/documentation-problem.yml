@@ -1,0 +1,26 @@
+name: Documentation problem
+description: Report an unclear or unsupported public claim.
+title: "Documentation: "
+labels: [documentation]
+body:
+  - type: input
+    id: document
+    attributes:
+      label: Document
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Unclear claim
+    validations:
+      required: true
+  - type: textarea
+    id: clarification
+    attributes:
+      label: Expected clarification
+  - type: textarea
+    id: wording
+    attributes:
+      label: Proposed wording
+
