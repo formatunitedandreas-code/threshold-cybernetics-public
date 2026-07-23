@@ -1,10 +1,12 @@
 stateDiagram-v2
     [*] --> Observed
-    Observed --> Eligible: evidence satisfies policy
-    Eligible --> Authorized: human decision
-    Authorized --> Executed: exact effect requested
-    Executed --> Reconciled: observed remote state matches
+    Observed --> Eligible: exact evidence satisfies policy
+    Eligible --> Authorized: explicit human decision
+    Authorized --> Executed: one-shot effect requested
+    Executed --> Reconciled: remote state matched
     Authorized --> Stopped: precondition or request failure
-    Stopped --> [*]
-    Reconciled --> [*]
+    Stopped --> Eligible: only after new decision
+    Reconciled --> AuthorityConsumed
+    Stopped --> AuthorityConsumed
+    AuthorityConsumed --> [*]
 

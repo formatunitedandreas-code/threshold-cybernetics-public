@@ -11,6 +11,10 @@ flowchart LR
     AuthenticationAdmission --> SquashMerge
     SquashMerge --> MainReconciliation
     MainReconciliation --> AuthorityZero
-    CLIFailure -. repositoryMutation=false; fallback=false; newHumanDecisionRequired=true .-> REST401
-    REST401 -. repositoryMutation=false; fallback=false; newHumanDecisionRequired=true .-> AuthenticationAdmission
+    CLIFailure -. repositoryMutation=false .-> REST401
+    CLIFailure -. fallback=false .-> REST401
+    CLIFailure -. newHumanDecisionRequired=true .-> REST401
+    REST401 -. repositoryMutation=false .-> AuthenticationAdmission
+    REST401 -. fallback=false .-> AuthenticationAdmission
+    REST401 -. newHumanDecisionRequired=true .-> AuthenticationAdmission
 
