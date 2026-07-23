@@ -19,4 +19,3 @@ If a finding may expose credentials, authentication context, private receipts, o
 ## AI-generated contributions
 
 Disclose AI assistance in pull requests. Confirm that public examples remain non-authorizing and that disclosure validation passed.
-

@@ -7,4 +7,3 @@
   <text x="24" y="184" font-family="Arial, sans-serif" font-size="18">Reconciled and stopped states consume one-shot authority</text>
   <text x="24" y="220" font-family="Arial, sans-serif" font-size="18">No active merge authority remains after terminalization</text>
 </svg>
-

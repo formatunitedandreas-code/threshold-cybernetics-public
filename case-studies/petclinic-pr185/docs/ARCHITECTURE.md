@@ -44,4 +44,3 @@ GitHub Effect Boundary: PR state, review threads, checks, and merge endpoint.
 Windows Execution Boundary: local process identity and access to an existing GitHub CLI authentication context.
 
 Human Authority Boundary: each effect required explicit human authorization.
-

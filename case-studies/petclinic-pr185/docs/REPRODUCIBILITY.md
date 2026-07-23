@@ -12,4 +12,3 @@ Verify:
 6. The review thread was resolved after the remediation commit.
 
 Do not attempt to replay the examples as grants or permits.
-

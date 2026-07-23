@@ -39,4 +39,3 @@ Public PR metadata, commit SHAs, changed paths, workflow conclusions, review met
 ## Why are the raw receipts private?
 
 Raw receipts can contain local context, decision details, and operational structure that should not become public authority material.
-

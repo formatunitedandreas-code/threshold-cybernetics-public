@@ -52,4 +52,3 @@
     "publicLinks": { "type": "object", "additionalProperties": { "type": "string", "pattern": "^https://github.com/" } }
   }
 }
-

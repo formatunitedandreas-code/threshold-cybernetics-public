@@ -19,4 +19,3 @@ Tokens, cookies, authorization headers, private keys, personal access tokens, cr
 ## Future changes
 
 Future public evidence changes must preserve non-authorizing examples, keep active grants out of the repository, run disclosure validation, and keep claims evidence-bound.
-

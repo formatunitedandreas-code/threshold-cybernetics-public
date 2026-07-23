@@ -24,4 +24,3 @@
 ## Why failures matter
 
 Failure did not expand authority. Failure did not authorize a fallback. Failure did not permit a second request. Failure required a new human decision.
-

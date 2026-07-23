@@ -7,4 +7,3 @@
   <text x="24" y="184" font-family="Arial, sans-serif" font-size="18">Failures: repositoryMutation=false, fallback=false, newHumanDecisionRequired=true</text>
   <text x="24" y="220" font-family="Arial, sans-serif" font-size="18">Final state: authority zero, no finite batch grant active</text>
 </svg>
-

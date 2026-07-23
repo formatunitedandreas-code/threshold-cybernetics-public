@@ -22,4 +22,3 @@
 - The system supports autonomous multibatch execution.
 - The system is certified or compliant.
 - The system eliminates human review.
-

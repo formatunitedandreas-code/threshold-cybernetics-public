@@ -48,4 +48,3 @@ Do not publish tokens, authentication traces, local operator details, or raw rec
 ## Upstream and provenance
 
 The source evidence comes from the owned PetClinic repository PR #185. This case study is a public summary, not an upstream endorsement or certification. See [UPSTREAM_AND_PROVENANCE.md](docs/UPSTREAM_AND_PROVENANCE.md).
-

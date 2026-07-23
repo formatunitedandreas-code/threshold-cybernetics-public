@@ -26,4 +26,3 @@ List changed evidence files, manifests, examples, or diagrams.
 ## AI assistance
 
 Disclose whether AI assistance was used and how outputs were reviewed.
-

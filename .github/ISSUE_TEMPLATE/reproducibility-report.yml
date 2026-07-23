@@ -51,4 +51,3 @@ body:
       options:
         - label: I confirm that no credentials are included.
           required: true
-

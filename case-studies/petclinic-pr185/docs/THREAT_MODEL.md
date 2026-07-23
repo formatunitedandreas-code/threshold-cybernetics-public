@@ -20,4 +20,3 @@
 | PR mutation after readiness | mitigated | fresh revalidation after publication and review resolution | future mutation requires recheck | final rereview |
 | public evidence tampering | partially_mitigated | public manifest and validation scripts | no signed public attestation here | manifest validation |
 | sanitized example mistaken for authority | partially_mitigated | examples mark nonAuthorizing and replayable=false | readers may still misread examples | disclosure validator |
-
