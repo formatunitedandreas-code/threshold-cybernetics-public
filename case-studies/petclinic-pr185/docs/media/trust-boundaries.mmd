@@ -1,2 +1,9 @@
-TODO: scaffold for PetClinic PR185 public case study.
+flowchart TD
+    HumanDecision --> CodexProcess
+    CodexProcess --> WindowsExecutionBoundary
+    WindowsExecutionBoundary --> GitHubAuthenticationBoundary
+    GitHubAuthenticationBoundary --> RepositoryEffect
+    RepositoryEffect --> Reconciliation
+    WindowsExecutionBoundary -. does not grant .-> GitHubAuthenticationBoundary
+    GitHubAuthenticationBoundary -. does not grant .-> HumanDecision
 

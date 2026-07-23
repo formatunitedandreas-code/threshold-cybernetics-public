@@ -1,2 +1,10 @@
-TODO: scaffold for PetClinic PR185 public case study.
+stateDiagram-v2
+    [*] --> Observed
+    Observed --> Eligible: evidence satisfies policy
+    Eligible --> Authorized: human decision
+    Authorized --> Executed: exact effect requested
+    Executed --> Reconciled: observed remote state matches
+    Authorized --> Stopped: precondition or request failure
+    Stopped --> [*]
+    Reconciled --> [*]
 

@@ -1,2 +1,16 @@
-TODO: scaffold for PetClinic PR185 public case study.
+flowchart LR
+    Draft --> Ready
+    Ready --> ReviewFinding
+    ReviewFinding --> Remediation
+    Remediation --> Publication
+    Publication --> ReviewResolution
+    ReviewResolution --> MergeReadiness
+    MergeReadiness --> CLIFailure
+    CLIFailure --> REST401
+    REST401 --> AuthenticationAdmission
+    AuthenticationAdmission --> SquashMerge
+    SquashMerge --> MainReconciliation
+    MainReconciliation --> AuthorityZero
+    CLIFailure -. repositoryMutation=false; fallback=false; newHumanDecisionRequired=true .-> REST401
+    REST401 -. repositoryMutation=false; fallback=false; newHumanDecisionRequired=true .-> AuthenticationAdmission
 
