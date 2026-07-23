@@ -1,2 +1,19 @@
-TODO: scaffold for PetClinic PR185 public case study.
+{
+  "example": true,
+  "nonAuthorizing": true,
+  "replayable": false,
+  "historicalOrSynthetic": true,
+  "expectedState": {
+    "pr": 185,
+    "headMatches": true,
+    "baseMatches": true
+  },
+  "observedState": {
+    "effectCompleted": true,
+    "mainReconciled": true
+  },
+  "effectExecuted": "single_exact_merge_request",
+  "reconciliationResult": "remote_main_matches_merge_result",
+  "remainingAuthority": 0
+}
 
