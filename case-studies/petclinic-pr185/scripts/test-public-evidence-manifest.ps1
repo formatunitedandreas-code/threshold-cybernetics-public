@@ -7,6 +7,7 @@ $ErrorActionPreference = "Stop"
 if ([string]::IsNullOrWhiteSpace($ManifestPath)) {
     $ManifestPath = Join-Path $PSScriptRoot "..\docs\PUBLIC_EVIDENCE_MANIFEST.json"
 }
+
 $manifest = Get-Content $ManifestPath -Raw | ConvertFrom-Json
 $allowed = @("schemaVersion","caseStudyId","historical","nonAuthorizing","authorityCurrentlyActive","repository","pullRequest","baseSha","finalHeadSha","mergeSha","mergeMethod","outcome","failClosedEvents","checks","openBlockingFindings","remainingMergeAuthority","finiteGrantActive","releaseAuthorized","deployAuthorized","redactions","nonClaims","publicLinks")
 $actual = @($manifest.PSObject.Properties.Name)
@@ -24,5 +25,35 @@ if ($manifest.remainingMergeAuthority -ne 0) { throw "remainingMergeAuthority mu
 if ($manifest.finiteGrantActive -ne $false) { throw "finiteGrantActive must be false" }
 if ($manifest.releaseAuthorized -ne $false) { throw "releaseAuthorized must be false" }
 if ($manifest.deployAuthorized -ne $false) { throw "deployAuthorized must be false" }
-foreach ($link in $manifest.publicLinks.PSObject.Properties.Value) { if ([string]::IsNullOrWhiteSpace([string]$link)) { throw "Empty public link" } }
+
+if ($null -eq $manifest.publicLinks) {
+    throw "publicLinks must be an object"
+}
+
+$publicLinkProperties = @($manifest.publicLinks.PSObject.Properties)
+foreach ($property in $publicLinkProperties) {
+    if ($property.Value -isnot [string]) {
+        throw "Public evidence link '$($property.Name)' must be a string."
+    }
+
+    $value = [string] $property.Value
+
+    if ([string]::IsNullOrWhiteSpace($value)) {
+        throw "Empty public link: $($property.Name)"
+    }
+
+    if ($value -notmatch '^https://github\.com/') {
+        throw "Public evidence link must use https://github.com/: $value"
+    }
+
+    $uri = $null
+    if (-not [System.Uri]::TryCreate($value, [System.UriKind]::Absolute, [ref] $uri)) {
+        throw "Invalid public evidence URL: $value"
+    }
+
+    if ($uri.Scheme -ne "https" -or $uri.Host -ne "github.com") {
+        throw "Unsupported public evidence host: $value"
+    }
+}
+
 Write-Host "publicEvidenceManifest=passed"
