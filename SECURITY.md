@@ -1,7 +1,9 @@
 # Security Policy
 
-Do not disclose credentials publicly. Do not post token material, authentication headers, raw authentication traces, or local operator context in issues, pull requests, discussions, or examples.
+Do not disclose credentials publicly. Do not post token material, authentication headers, raw authentication traces, local operator context, private receipts, or unpublished governance evidence in issues, pull requests, discussions, or examples.
 
-Use GitHub private vulnerability reporting when it is available for this repository. If it is not available, use an existing private channel with the repository owner. This file intentionally does not invent an email address or private contact route.
+Private vulnerability reporting is enabled for this repository. Use GitHub private vulnerability reporting for vulnerabilities, credential exposure, disclosure-boundary issues, or other security-sensitive findings.
 
-Current publication gate: a repository owner should confirm the intended private reporting channel before remote publication of this case-study branch.
+Public issues and pull requests are appropriate for non-sensitive documentation corrections, reproducibility notes, and public case-study discussion only. They are not a fallback channel for credentials, exploit details, private contact data, or vulnerability reports.
+
+This file intentionally does not publish an email address or invent a separate private contact route.
