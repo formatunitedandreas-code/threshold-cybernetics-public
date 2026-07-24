@@ -53,5 +53,3 @@ foreach ($md in $mdFiles) {
 Assert-True "relative links resolve" $true
 if (Get-Command gitleaks -ErrorAction SilentlyContinue) { gitleaks detect --no-git --source $Root | Out-Host; if ($LASTEXITCODE -ne 0) { throw "gitleaks_failed" }; Write-Host "gitleaks=passed" } else { Write-Host "gitleaks=unavailable_not_installed" }
 Write-Host "publicPreExecutionValidation=passed"
-
-
