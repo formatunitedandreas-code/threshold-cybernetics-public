@@ -334,6 +334,7 @@ This remains a bounded public reachability readout, not formal verification, run
 
 - [Governed Agent Merge - PetClinic PR #185](case-studies/petclinic-pr185/README.md)
   A historical one-shot, SHA-bound pull-request merge case study with fail-closed retries, review remediation and post-merge reconciliation.
+- [Pre-Execution Commitment — Bounded PetClinic Architectural Refactoring](case-studies/petclinic-senior-refactoring-v0-1/README.md)`n  A candidate, quality profile, behavioral invariants and three-batch plan fixed before any product source or product test changes.
 
 Publication metadata:
 

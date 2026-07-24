@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "threshold.public-pre-execution-commitment.v0.1",
+  "caseStudyId": "petclinic-senior-refactoring-v0-1",
+  "runId": "SRR-PETCLINIC-001",
+  "historical": true,
+  "nonAuthorizing": true,
+  "phase": "pre_execution",
+  "candidate": {
+    "candidateId": "owner-web-flow-responsibility-split-v0-1",
+    "score": 34,
+    "leadOverRunnerUp": 7
+  },
+  "boundBeforeProductExecution": {
+    "candidateIdentity": true,
+    "candidateScope": true,
+    "architectureBaseline": true,
+    "behavioralInvariants": true,
+    "qualityProfile": true,
+    "threeBatchPlan": true,
+    "counterfactualPlanReview": true
+  },
+  "observedState": {
+    "productSourceChanged": false,
+    "productTestsChanged": false,
+    "part2Executed": false,
+    "pushExecuted": false,
+    "pullRequestCreated": false,
+    "mergeExecuted": false,
+    "redditPostCreated": false
+  },
+  "validation": {
+    "thresholdContractsTestsPassed": 110,
+    "refactoringGovernorTestsPassed": 405,
+    "petClinicCandidateDiscoveryTest": "passed",
+    "petClinicPlanTest": "passed"
+  },
+  "commitments": {
+    "part1HandoffDigest": "sha256:8dd74487ac7c609387fe94e827f4c2c89d80b74a5fd85cb3c78f82f4ad643a02",
+    "executionDecisionPacketDigest": "sha256:0fbf9f52195b38b354a0e45f0ec962da4f24500088e1b7fcfd5c1b2061ff0522"
+  },
+  "authority": {
+    "executionAuthorized": false,
+    "publicationAuthorized": false,
+    "mergeAuthorized": false,
+    "releaseAuthorized": false
+  },
+  "claims": {
+    "refactoringExecuted": false,
+    "qualityAssessmentPassed": false,
+    "architectureImproved": false,
+    "humanSeniorEquivalent": false,
+    "formalVerificationClaim": false,
+    "independentObserver": false
+  }
+}
