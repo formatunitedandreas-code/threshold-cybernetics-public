@@ -48,3 +48,14 @@ Do not publish tokens, authentication traces, local operator details, or raw rec
 ## Upstream and provenance
 
 The source evidence comes from the owned PetClinic repository PR #185. This case study is a public summary, not an upstream endorsement or certification. See [UPSTREAM_AND_PROVENANCE.md](docs/UPSTREAM_AND_PROVENANCE.md).
+
+## Follow-on experiment
+
+A follow-on experiment examines whether the same capability/authority separation
+can govern a bounded, multi-commit architectural refactoring.
+
+The current public package documents only the pre-execution commitment:
+candidate selection, quality criteria, scope boundaries and the planned
+three-batch sequence were fixed before product code was changed.
+
+No refactoring result is claimed at this stage.
