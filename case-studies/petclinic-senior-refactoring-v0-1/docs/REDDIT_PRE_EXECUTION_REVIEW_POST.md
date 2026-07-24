@@ -2,7 +2,7 @@
 
 Title: I selected an architectural refactor for an AI coding agent—but froze the plan before letting it touch product code. What would you attack first?
 
-Disclosure: this is a local, non-authorizing pre-execution package. No Product code has been changed, no Product tests have been changed, no PR has been opened, and no result is known.
+Disclosure: this is a public, non-authorizing pre-execution package. No Product code has been changed, no Product tests have been changed, no Product refactoring PR has been opened, and no result is known. A separate public documentation PR (#3) records this pre-execution state.
 
 Earlier I documented PR #185 as a one-shot, SHA-bound merge-governance case. That was useful, but it left a fair criticism: a correctly enforced gate is not enough if the agent can manipulate the evidence that the gate consumes.
 
