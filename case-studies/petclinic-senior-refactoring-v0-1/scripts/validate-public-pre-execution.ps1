@@ -3,6 +3,18 @@ $ErrorActionPreference = "Stop"
 $Root = Split-Path $PSScriptRoot -Parent
 function Assert-True { param([string] $Name, [bool] $Condition) if (-not $Condition) { throw "validation_failed=$Name" }; Write-Host "ok $Name" }
 function Read-Json($Path) { Get-Content $Path -Raw | ConvertFrom-Json }
+function Convert-ToPortablePath([string] $Path) { return (($Path -replace '\\', '/') -replace '/+', '/') }
+function Test-IsUnderPath { param([string] $Path, [string] $Parent)
+    $portablePath = (Convert-ToPortablePath $Path).TrimEnd('/')
+    $portableParent = (Convert-ToPortablePath $Parent).TrimEnd('/')
+    return ($portablePath -eq $portableParent -or $portablePath.StartsWith($portableParent + '/', [System.StringComparison]::OrdinalIgnoreCase))
+}
+function Test-IsPublicScanFile { param([string] $Path, [string] $ScriptsPath)
+    if (Test-IsUnderPath -Path $Path -Parent $ScriptsPath) { return $false }
+    if ($Path -match 'PUBLIC_NON_CLAIMS.md$') { return $false }
+    if ($Path -match 'PUBLIC_DISCLOSURE_POLICY.md$') { return $false }
+    return $true
+}
 $commitmentPath = Join-Path $Root "PUBLIC_PRE_EXECUTION_COMMITMENT.json"
 $commitment = Read-Json $commitmentPath
 Assert-True "phase pre_execution" ($commitment.phase -eq "pre_execution")
@@ -10,15 +22,22 @@ Assert-True "historical true" ($commitment.historical -eq $true)
 Assert-True "nonAuthorizing true" ($commitment.nonAuthorizing -eq $true)
 Assert-True "product source unchanged" ($commitment.observedState.productSourceChanged -eq $false)
 Assert-True "product tests unchanged" ($commitment.observedState.productTestsChanged -eq $false)
-Assert-True "part2 not executed" ($commitment.observedState.part2Executed -eq $false)
+Assert-True "no action observed state false" (
+    $commitment.observedState.part2Executed -eq $false -and
+    $commitment.observedState.pushExecuted -eq $false -and
+    $commitment.observedState.pullRequestCreated -eq $false -and
+    $commitment.observedState.mergeExecuted -eq $false -and
+    $commitment.observedState.redditPostCreated -eq $false
+)
 Assert-True "authority false" ($commitment.authority.executionAuthorized -eq $false -and $commitment.authority.publicationAuthorized -eq $false -and $commitment.authority.mergeAuthorized -eq $false -and $commitment.authority.releaseAuthorized -eq $false)
 Assert-True "claims false" ($commitment.claims.refactoringExecuted -eq $false -and $commitment.claims.qualityAssessmentPassed -eq $false -and $commitment.claims.architectureImproved -eq $false -and $commitment.claims.humanSeniorEquivalent -eq $false -and $commitment.claims.formalVerificationClaim -eq $false -and $commitment.claims.independentObserver -eq $false)
 foreach ($digest in @($commitment.commitments.part1HandoffDigest, $commitment.commitments.executionDecisionPacketDigest)) { Assert-True "digest pattern $digest" ($digest -match '^sha256:[0-9a-f]{64}$') }
 Get-Content (Join-Path $Root "schemas/public-pre-execution-commitment-v0.1.schema.json") -Raw | ConvertFrom-Json | Out-Null
 Assert-True "schema json parses" $true
 $files = @(Get-ChildItem $Root -Recurse -File)
-$scanFiles = @($files | Where-Object { $_.FullName -notlike '*\scripts\*' -and $_.FullName -notmatch 'PUBLIC_NON_CLAIMS.md$' -and $_.FullName -notmatch 'PUBLIC_DISCLOSURE_POLICY.md$' })
-$forbidden = @('USERPROFILE', 'AppData', 'authorization header', 'private key', 'BEGIN RSA PRIVATE KEY', 'BEGIN OPENSSH PRIVATE KEY', 'remainingUses":\s*[1-9]', 'executionAuthorized":\s*true', 'publicationAuthorized":\s*true', 'mergeAuthorized":\s*true', 'releaseAuthorized":\s*true', 'refactoringExecuted":\s*true', 'qualityAssessmentPassed":\s*true', 'architectureImproved":\s*true', 'humanSeniorEquivalent":\s*true', 'formalVerificationClaim":\s*true', 'independentObserver":\s*true', 'part2Executed":\s*true')
+$scriptsPath = Join-Path $Root "scripts"
+$scanFiles = @($files | Where-Object { Test-IsPublicScanFile -Path $_.FullName -ScriptsPath $scriptsPath })
+$forbidden = @('USERPROFILE', 'AppData', 'authorization header', 'private key', 'BEGIN RSA PRIVATE KEY', 'BEGIN OPENSSH PRIVATE KEY', 'remainingUses":\s*[1-9]', 'executionAuthorized":\s*true', 'publicationAuthorized":\s*true', 'mergeAuthorized":\s*true', 'releaseAuthorized":\s*true', 'pushExecuted":\s*true', 'pullRequestCreated":\s*true', 'mergeExecuted":\s*true', 'redditPostCreated":\s*true', 'refactoringExecuted":\s*true', 'qualityAssessmentPassed":\s*true', 'architectureImproved":\s*true', 'humanSeniorEquivalent":\s*true', 'formalVerificationClaim":\s*true', 'independentObserver":\s*true', 'part2Executed":\s*true')
 foreach ($file in $scanFiles) {
     $text = Get-Content $file.FullName -Raw
     foreach ($pattern in $forbidden) {
