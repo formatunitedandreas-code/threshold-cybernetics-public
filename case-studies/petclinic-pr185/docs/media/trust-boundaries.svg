@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="390" viewBox="0 0 980 390">
+  <rect width="980" height="390" fill="#ffffff"/>
+  <text x="24" y="34" font-family="Arial, sans-serif" font-size="22" font-weight="700">Trust boundaries</text>
+  <text x="24" y="76" font-family="Arial, sans-serif" font-size="18">Human Decision -&gt; Codex Process -&gt; Windows Execution Boundary</text>
+  <text x="24" y="112" font-family="Arial, sans-serif" font-size="18">Windows Execution Boundary -&gt; GitHub Authentication Boundary</text>
+  <text x="24" y="148" font-family="Arial, sans-serif" font-size="18">GitHub Authentication Boundary -&gt; Repository Effect -&gt; Reconciliation</text>
+  <text x="24" y="184" font-family="Arial, sans-serif" font-size="18">Windows elevation does not grant GitHub authority</text>
+  <text x="24" y="220" font-family="Arial, sans-serif" font-size="18">GitHub authentication does not grant Threshold authority</text>
+  <text x="24" y="256" font-family="Arial, sans-serif" font-size="18">Both are insufficient without exact admission</text>
+</svg>

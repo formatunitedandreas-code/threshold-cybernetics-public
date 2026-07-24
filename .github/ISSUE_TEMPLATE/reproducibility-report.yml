@@ -1,0 +1,53 @@
+name: Reproducibility report
+description: Report a reproducibility problem in a public case study.
+title: "Reproducibility: "
+labels: [reproducibility]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Case-study version
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+    validations:
+      required: true
+  - type: textarea
+    id: tools
+    attributes:
+      label: Tool versions
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps performed
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: Do not include credentials or local operator details.
+  - type: checkboxes
+    id: no-secrets
+    attributes:
+      label: Secret review
+      options:
+        - label: I confirm that no credentials are included.
+          required: true

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "threshold.public-case-study.v0.1",
+  "caseStudyId": "petclinic-pr185",
+  "historical": true,
+  "nonAuthorizing": true,
+  "authorityCurrentlyActive": false,
+  "repository": "formatunitedandreas-code/spring-framework-petclinic",
+  "pullRequest": 185,
+  "baseSha": "6ba33e24ddbdbd2c4dcaa8cc5a74b9b585a3f255",
+  "finalHeadSha": "b4dbcb6d59d93aed160e1d412192914feeea0fd7",
+  "mergeSha": "1c4423dcd75fcde12daae445c7e147a972ccbd57",
+  "mergeMethod": "squash",
+  "outcome": "merged_and_reconciled",
+  "failClosedEvents": [
+    "metadata_binding_failure",
+    "review_finding",
+    "github_cli_resolution_failure",
+    "rest_authentication_failure"
+  ],
+  "checks": [
+    {
+      "name": "threshold-governance",
+      "conclusion": "success"
+    },
+    {
+      "name": "build (17)",
+      "conclusion": "success"
+    },
+    {
+      "name": "build (21)",
+      "conclusion": "success"
+    },
+    {
+      "name": "test",
+      "conclusion": "success"
+    }
+  ],
+  "openBlockingFindings": 0,
+  "remainingMergeAuthority": 0,
+  "finiteGrantActive": false,
+  "releaseAuthorized": false,
+  "deployAuthorized": false,
+  "redactions": [
+    "local_paths",
+    "authentication_material",
+    "raw_authorization_packets",
+    "raw_receipts",
+    "operator_environment_details",
+    "full_prompt_transcripts"
+  ],
+  "nonClaims": [
+    "not_production_ready",
+    "not_general_ai_safety_proof",
+    "not_formally_verified",
+    "not_finite_batch_authority",
+    "not_upstream_authority",
+    "not_release_or_deploy_authority"
+  ],
+  "publicLinks": {
+    "repository": "https://github.com/formatunitedandreas-code/spring-framework-petclinic",
+    "pullRequest": "https://github.com/formatunitedandreas-code/spring-framework-petclinic/pull/185",
+    "sourceHead": "https://github.com/formatunitedandreas-code/spring-framework-petclinic/commit/b4dbcb6d59d93aed160e1d412192914feeea0fd7",
+    "baseHead": "https://github.com/formatunitedandreas-code/spring-framework-petclinic/commit/6ba33e24ddbdbd2c4dcaa8cc5a74b9b585a3f255",
+    "mergeCommit": "https://github.com/formatunitedandreas-code/spring-framework-petclinic/commit/1c4423dcd75fcde12daae445c7e147a972ccbd57",
+    "changedFiles": "https://github.com/formatunitedandreas-code/spring-framework-petclinic/pull/185/files",
+    "workflowResults": "https://github.com/formatunitedandreas-code/spring-framework-petclinic/pull/185/checks"
+  }
+}

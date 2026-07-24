@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Governed Agent Merge - PetClinic PR #185"
+version: "0.1.0"
+date-released: "2026-07-23"
+url: "https://github.com/formatunitedandreas-code/threshold-cybernetics-public"
+authors:
+  - family-names: "Mueller"
+    given-names: "Andreas"
+preferred-citation:
+  type: generic
+  title: "Governed Agent Merge - PetClinic PR #185"
+  authors:
+    - family-names: "Mueller"
+      given-names: "Andreas"
+  year: 2026
+  version: "0.1.0"
+  url: "https://github.com/formatunitedandreas-code/threshold-cybernetics-public"
+message: "Mueller, Andreas. (2026). Governed Agent Merge - PetClinic PR #185 (Version 0.1.0). Threshold Cybernetics. https://github.com/formatunitedandreas-code/threshold-cybernetics-public"

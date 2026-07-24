@@ -330,3 +330,13 @@ The corrected model distinguishes `unauthorized_pr_created` from an explicitly h
 It also verifies that candidate-specific terminal expectations are evaluated, v0.5/v0.6/v0.7 public inputs are loaded, and invariants are derived from reachable states rather than static false values.
 
 This remains a bounded public reachability readout, not formal verification, runtime enforcement, product readiness, deployment readiness or compliance proof.
+## Public engineering case studies
+
+- [Governed Agent Merge - PetClinic PR #185](case-studies/petclinic-pr185/README.md)
+  A historical one-shot, SHA-bound pull-request merge case study with fail-closed retries, review remediation and post-merge reconciliation.
+
+Publication metadata:
+
+- [Security policy](SECURITY.md)
+- [Public reference notice](PUBLIC_REFERENCE_NOTICE.md)
+- [Citation metadata](CITATION.cff)

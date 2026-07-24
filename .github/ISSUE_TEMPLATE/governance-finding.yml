@@ -1,0 +1,40 @@
+name: Governance finding
+description: Report a governance or authority-boundary finding.
+title: "Governance finding: "
+labels: [governance]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Finding summary
+    validations:
+      required: true
+  - type: input
+    id: transition
+    attributes:
+      label: Affected state transition
+  - type: input
+    id: boundary
+    attributes:
+      label: Affected authority boundary
+  - type: textarea
+    id: failure
+    attributes:
+      label: Possible failure mode
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Suggested mitigation
+  - type: dropdown
+    id: security
+    attributes:
+      label: Security-sensitive?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true

@@ -1,0 +1,11 @@
+flowchart TD
+    HumanDecision[Human Decision]
+    CodexProcess[Codex Process]
+    WindowsBoundary[Windows Execution Boundary]
+    GitHubBoundary[GitHub Authentication Boundary]
+    RepositoryEffect[Repository Effect]
+    Reconciliation[Reconciliation]
+    HumanDecision --> CodexProcess --> WindowsBoundary --> GitHubBoundary --> RepositoryEffect --> Reconciliation
+    WindowsBoundary -. Windows elevation does not grant GitHub authority .-> GitHubBoundary
+    GitHubBoundary -. GitHub authentication does not grant Threshold authority .-> HumanDecision
+    HumanDecision -. necessary but insufficient without exact admission .-> RepositoryEffect

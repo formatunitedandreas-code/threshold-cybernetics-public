@@ -1,0 +1,16 @@
+{
+  "example": true,
+  "nonAuthorizing": true,
+  "replayable": false,
+  "historicalOrSynthetic": true,
+  "preconditions": {
+    "headBound": true,
+    "baseBound": true,
+    "checksObserved": true
+  },
+  "requestedEffect": "merge_request",
+  "failureCategory": "request_failed_before_repository_mutation",
+  "effectExecuted": false,
+  "fallbackExecuted": false,
+  "nextHumanDecisionRequired": true
+}
