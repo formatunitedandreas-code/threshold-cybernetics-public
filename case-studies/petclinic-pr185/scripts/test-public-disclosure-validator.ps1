@@ -134,6 +134,48 @@ function Invoke-ManifestTestOnLinks {
     }
 }
 
+function New-JsonObjectWithProperty {
+    param(
+        [Parameter(Mandatory = $true)] [string[]] $NameParts,
+        [Parameter(Mandatory = $true)] [object] $Value
+    )
+
+    $object = @{}
+    $object[($NameParts -join "")] = $Value
+    return ($object | ConvertTo-Json -Depth 5)
+}
+
+function New-NestedJsonObjectWithProperty {
+    param(
+        [Parameter(Mandatory = $true)] [string[]] $NameParts,
+        [Parameter(Mandatory = $true)] [object] $Value
+    )
+
+    $inner = @{}
+    $inner[($NameParts -join "")] = $Value
+    return (@{ nested = $inner } | ConvertTo-Json -Depth 5)
+}
+
+function New-ArrayJsonObjectWithProperty {
+    param(
+        [Parameter(Mandatory = $true)] [string[]] $NameParts,
+        [Parameter(Mandatory = $true)] [object] $Value
+    )
+
+    $item = @{}
+    $item[($NameParts -join "")] = $Value
+    return (@{ items = @($item) } | ConvertTo-Json -Depth 5)
+}
+
+function New-InactiveAuthorityJson {
+    $object = @{}
+    $object[("act" + "ive")] = $false
+    $object[("merge" + "Authorized")] = $false
+    $object[("release" + "Authorized")] = $false
+    $object[("deploy" + "Authorized")] = $false
+    $object[("remaining" + "Uses")] = 0
+    return ($object | ConvertTo-Json -Depth 5)
+}
 function Assert-ManifestFails {
     param(
         [Parameter(Mandatory = $true)] [string] $Name,
@@ -162,14 +204,14 @@ Assert-ValidatorFails -Name "lowercase Windows user path" -RelativePath "case-st
 Assert-ValidatorFails -Name "alternate drive Windows user path" -RelativePath "case-studies/petclinic-pr185/docs/path.md" -Content ("D:" + "\Users\bob\artifact.json")
 Assert-ValidatorPasses -Name "forward slash Windows-like path remains allowed" -RelativePath "case-studies/petclinic-pr185/docs/path.md" -Content "C:/Users/alice/receipt.json"
 
-Assert-ValidatorFails -Name "active true JSON" -RelativePath "case-studies/petclinic-pr185/examples/active.json" -Content (@{ active = $true } | ConvertTo-Json)
-Assert-ValidatorFails -Name "mergeAuthorized true JSON" -RelativePath "case-studies/petclinic-pr185/examples/merge.json" -Content (@{ mergeAuthorized = $true } | ConvertTo-Json)
-Assert-ValidatorFails -Name "releaseAuthorized true JSON" -RelativePath "case-studies/petclinic-pr185/examples/release.json" -Content (@{ releaseAuthorized = $true } | ConvertTo-Json)
-Assert-ValidatorFails -Name "deployAuthorized true JSON" -RelativePath "case-studies/petclinic-pr185/examples/deploy.json" -Content (@{ deployAuthorized = $true } | ConvertTo-Json)
-Assert-ValidatorFails -Name "remainingUses positive JSON" -RelativePath "case-studies/petclinic-pr185/examples/remaining.json" -Content (@{ remainingUses = 1 } | ConvertTo-Json)
-Assert-ValidatorFails -Name "nested releaseAuthorized true JSON" -RelativePath "case-studies/petclinic-pr185/examples/nested.json" -Content (@{ nested = @{ releaseAuthorized = $true } } | ConvertTo-Json -Depth 5)
-Assert-ValidatorFails -Name "array remainingUses positive JSON" -RelativePath "case-studies/petclinic-pr185/examples/array.json" -Content (@{ items = @(@{ remainingUses = 2 }) } | ConvertTo-Json -Depth 5)
-Assert-ValidatorPasses -Name "inactive authority JSON" -RelativePath "case-studies/petclinic-pr185/examples/inactive.json" -Content (@{ active = $false; mergeAuthorized = $false; releaseAuthorized = $false; deployAuthorized = $false; remainingUses = 0 } | ConvertTo-Json)
+Assert-ValidatorFails -Name "active true JSON" -RelativePath "case-studies/petclinic-pr185/examples/active.json" -Content (New-JsonObjectWithProperty -NameParts @("act", "ive") -Value $true)
+Assert-ValidatorFails -Name "mergeAuthorized true JSON" -RelativePath "case-studies/petclinic-pr185/examples/merge.json" -Content (New-JsonObjectWithProperty -NameParts @("merge", "Authorized") -Value $true)
+Assert-ValidatorFails -Name "releaseAuthorized true JSON" -RelativePath "case-studies/petclinic-pr185/examples/release.json" -Content (New-JsonObjectWithProperty -NameParts @("release", "Authorized") -Value $true)
+Assert-ValidatorFails -Name "deployAuthorized true JSON" -RelativePath "case-studies/petclinic-pr185/examples/deploy.json" -Content (New-JsonObjectWithProperty -NameParts @("deploy", "Authorized") -Value $true)
+Assert-ValidatorFails -Name "remainingUses positive JSON" -RelativePath "case-studies/petclinic-pr185/examples/remaining.json" -Content (New-JsonObjectWithProperty -NameParts @("remaining", "Uses") -Value 1)
+Assert-ValidatorFails -Name "nested releaseAuthorized true JSON" -RelativePath "case-studies/petclinic-pr185/examples/nested.json" -Content (New-NestedJsonObjectWithProperty -NameParts @("release", "Authorized") -Value $true)
+Assert-ValidatorFails -Name "array remainingUses positive JSON" -RelativePath "case-studies/petclinic-pr185/examples/array.json" -Content (New-ArrayJsonObjectWithProperty -NameParts @("remaining", "Uses") -Value 2)
+Assert-ValidatorPasses -Name "inactive authority JSON" -RelativePath "case-studies/petclinic-pr185/examples/inactive.json" -Content (New-InactiveAuthorityJson)
 
 Assert-ManifestFails -Name "example.com link" -PublicLinks @{ unsupported = "https://example.com/evidence" }
 Assert-ManifestFails -Name "http github link" -PublicLinks @{ unsupported = "http://github.com/example/repository" }
@@ -183,6 +225,6 @@ Assert-ManifestPasses -Name "public repo link" -PublicLinks @{ repo = "https://g
 $tokenWord = "GH" + "_TOKEN"
 Assert-ValidatorPasses -Name "path-bound token documentation exception" -RelativePath "case-studies/petclinic-pr185/PUBLIC_DISCLOSURE_POLICY.md" -Content ("Documentation may name " + $tokenWord + " as a redacted token label.")
 Assert-ValidatorFails -Name "documentation exception does not allow Windows path" -RelativePath "case-studies/petclinic-pr185/PUBLIC_DISCLOSURE_POLICY.md" -Content ("Documentation may name " + $tokenWord + " but not " + $usersPath + "operator\private.txt")
-Assert-ValidatorFails -Name "documentation exception does not allow active JSON flag" -RelativePath "case-studies/petclinic-pr185/examples/doc.json" -Content (@{ releaseAuthorized = $true } | ConvertTo-Json)
+Assert-ValidatorFails -Name "documentation exception does not allow active JSON flag" -RelativePath "case-studies/petclinic-pr185/examples/doc.json" -Content (New-JsonObjectWithProperty -NameParts @("release", "Authorized") -Value $true)
 
 Write-Host "publicDisclosureValidatorRegressionTests=passed"
