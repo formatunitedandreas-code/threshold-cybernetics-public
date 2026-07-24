@@ -1,0 +1,14 @@
+flowchart LR
+  A[Domain Observation] --> B[Candidate Discovery]
+  B --> C[Candidate Ranking]
+  C --> D[Architecture Baseline]
+  D --> E[Quality Contract]
+  E --> F[Three-Batch Plan]
+  F --> G[Human Decision Required]
+  G --> H[Product Execution Not Yet Started]
+  I[Evidence-Producer Integrity] --> J[Hold Block Demote]
+  K[Policy Digest] --> J
+  L[Registry Digest] --> J
+  M[Scope Digest] --> J
+  N[Behavioral Invariant Digest] --> J
+  J -. no execute publish merge .-> G

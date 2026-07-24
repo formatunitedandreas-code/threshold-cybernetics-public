@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public Pre-Execution Commitment v0.1",
+  "type": "object",
+  "required": ["schemaVersion", "caseStudyId", "runId", "historical", "nonAuthorizing", "phase", "candidate", "boundBeforeProductExecution", "observedState", "validation", "commitments", "authority", "claims"],
+  "properties": {
+    "schemaVersion": { "const": "threshold.public-pre-execution-commitment.v0.1" },
+    "caseStudyId": { "const": "petclinic-senior-refactoring-v0-1" },
+    "runId": { "const": "SRR-PETCLINIC-001" },
+    "historical": { "const": true },
+    "nonAuthorizing": { "const": true },
+    "phase": { "const": "pre_execution" },
+    "candidate": {
+      "type": "object",
+      "required": ["candidateId", "score", "leadOverRunnerUp"],
+      "properties": {
+        "candidateId": { "const": "owner-web-flow-responsibility-split-v0-1" },
+        "score": { "const": 34 },
+        "leadOverRunnerUp": { "const": 7 }
+      }
+    },
+    "observedState": {
+      "type": "object",
+      "properties": {
+        "productSourceChanged": { "const": false },
+        "productTestsChanged": { "const": false },
+        "part2Executed": { "const": false },
+        "pushExecuted": { "const": false },
+        "pullRequestCreated": { "const": false },
+        "mergeExecuted": { "const": false },
+        "redditPostCreated": { "const": false }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "properties": {
+        "executionAuthorized": { "const": false },
+        "publicationAuthorized": { "const": false },
+        "mergeAuthorized": { "const": false },
+        "releaseAuthorized": { "const": false }
+      }
+    },
+    "claims": {
+      "type": "object",
+      "properties": {
+        "refactoringExecuted": { "const": false },
+        "qualityAssessmentPassed": { "const": false },
+        "architectureImproved": { "const": false },
+        "humanSeniorEquivalent": { "const": false },
+        "formalVerificationClaim": { "const": false },
+        "independentObserver": { "const": false }
+      }
+    },
+    "commitments": {
+      "type": "object",
+      "properties": {
+        "part1HandoffDigest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+        "executionDecisionPacketDigest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }
+      }
+    }
+  }
+}

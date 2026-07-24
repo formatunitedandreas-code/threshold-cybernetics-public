@@ -21,14 +21,34 @@ This package makes the evaluation criteria visible before the refactoring result
 
 The candidate, architecture baseline, quality profile, behavioral invariants, scope boundaries and exact three-batch plan were bound during a governance-only Part 1. No product source or product tests were changed.
 
+## Central question
+
+Can a coding agent later execute a bounded architectural refactoring against quality criteria that were fixed before it saw the outcome of its own changes?
+
 ## Current status
 
-This package documents planning and admission evidence only. It does not document an executed refactoring, completed batch, architecture improvement, final quality pass, push, pull request, merge, or proof of human-equivalent senior engineering.
+This package documents planning and admission evidence only.
+
+It does not document:
+
+- an executed refactoring;
+- a completed batch;
+- an architecture improvement;
+- a passed final quality assessment;
+- a push, pull request or merge;
+- proof of human-equivalent senior engineering.
 
 ## Package files
 
 - [Pre-execution commitment](PRE_EXECUTION_COMMITMENT.md)
+- [Public commitment JSON](PUBLIC_PRE_EXECUTION_COMMITMENT.json)
 - [Claim evidence matrix](CLAIM_EVIDENCE_MATRIX.md)
+- [Candidate selection](docs/CANDIDATE_SELECTION.md)
+- [Architecture progress](docs/ARCHITECTURE_PROGRESS.md)
+- [Senior-refactoring quality profile](docs/SENIOR_REFACTORING_QUALITY_PROFILE.md)
+- [Three-batch execution plan](docs/THREE_BATCH_EXECUTION_PLAN.md)
+- [Limitations](docs/LIMITATIONS.md)
+- [Reddit pre-execution review draft](docs/REDDIT_PRE_EXECUTION_REVIEW_POST.md)
+- [Disclosure policy](PUBLIC_DISCLOSURE_POLICY.md)
 - [Public claims](PUBLIC_CLAIMS.md)
 - [Public non-claims](PUBLIC_NON_CLAIMS.md)
-- [Disclosure policy](PUBLIC_DISCLOSURE_POLICY.md)
